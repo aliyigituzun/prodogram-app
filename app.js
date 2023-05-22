@@ -25,7 +25,7 @@ if (cluster.isMaster) {
 
   dotenv.config({ path: path.join(__dirname, '.env') });
 
-  const PORT = process.env.PORT || 3000;
+  const PORT = 443;
   const MAX_SERVER_UPLOAD_LIMIT = 52428800;
   const MAX_SERVER_PARAMETER_LIMIT = 50000;
   const QUERY_LIMIT = 100;
