@@ -1,0 +1,19 @@
+extends ./head
+block head
+    .all-wrapper
+        .header
+            .navbar-wrapper
+                a.title-text-wrapper(href='/')
+                    .title-text.white PRO
+                    .title-text.green DO
+                    .title-text.white GRAM
+                .navbar
+                    a.each-navbar-item(href='/program') Paketler
+                    a.each-navbar-item(href='/exercise') Antrenman
+                    a.each-navbar-item(href='/diet') Diyet
+                    a.each-navbar-item(href='/faq') S.S.S.
+                    a.each-navbar-item(href='/calculator') Hesaplama
+                    a.translation-wrapper
+                        .translation-button TR 
+                        .translation-button EN 
+        block content

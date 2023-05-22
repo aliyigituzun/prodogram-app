@@ -1,0 +1,61 @@
+extends ../partials/header
+block content
+    .all-content-wrapper
+        .calculator-wrapper
+            .calculator-info-wrapper
+                .calculator-info-title.green Hesaplama
+                .calculator-info-text.white Aşağıda yağ oranı, TDEE ve 1 Rep Maks hesaplama araçları bulunmaktadır. 
+            .each-calculator
+                .each-calculator-title Yağ Oranı 
+                .each-calculator-input-wrapper
+                    .each-calculator-input-label 
+                    input.each-calculator-input 
+                .calculate-button Hesapla
+                .each-calculator-result
+                    .each-calculator-result-title
+                    .each-calculator-result-text
+            .each-calculator
+                .each-calculator-title TDEE 
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Cinsiyet
+                    .buttons-wrapper
+                        .each-calculator-button#male Erkek
+                        .each-calculator-button#female Kadın
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Boy
+                    input.each-calculator-input.short-input 
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Yaş
+                    input.each-calculator-input.short-input 
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Aktiflik Seviyesi
+                    select#tdee_activity
+                        option(value='1') Çok Az Aktif
+                        option(value='2') Az Aktif
+                        option(value='3') Orta Aktif
+                        option(value='4') Çok Aktif
+                        option(value='5') Aşırı Aktif
+                .calculate-button Hesapla
+                .each-calculator-result
+                    .each-calculator-result-title
+                    .each-calculator-result-text
+            .each-calculator
+                .each-calculator-title 1 Rep Maks
+                .each-calculator-input-wrapper
+                    .each-calculator-input-label 
+                    input.each-calculator-input 
+                .calculate-button Hesapla
+                .each-calculator-result
+                    .each-calculator-result-title
+                    .each-calculator-result-text
+        .links-wrapper
+            a.each-link-wrapper Paketler
+            a.each-link-wrapper Diyet
+            a.each-link-wrapper Antrenman
+            a.each-link-wrapper Hesaplama
+            a.each-link-wrapper S.S.S
+        .footer-wrapper
+            .footer-text-wrapper
+                .footer-text.white PRO
+                .footer-text.green DO
+                .footer-text.white GRAM
