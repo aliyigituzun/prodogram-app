@@ -20,6 +20,7 @@ html(lang="en")
           else
             link(rel='stylesheet' href=`/css/general/${file_name}.css`)
       script(src='https://accounts.google.com/gsi/client')
+      script(src='js/index/navbar.js')
       if includes.external.js
         each file_name in includes.external.js
           if file_name == 'page'

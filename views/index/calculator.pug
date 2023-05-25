@@ -7,9 +7,23 @@ block content
                 .calculator-info-text.white Aşağıda yağ oranı, TDEE ve 1 Rep Maks hesaplama araçları bulunmaktadır. 
             .each-calculator
                 .each-calculator-title Yağ Oranı 
-                .each-calculator-input-wrapper
-                    .each-calculator-input-label 
-                    input.each-calculator-input 
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Cinsiyet
+                    .buttons-wrapper
+                        .each-calculator-button#male Erkek
+                        .each-calculator-button#female Kadın
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Omuz Çevre Uzunluğu
+                    input.each-calculator-input.short-input#tdee-weight
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Bel Çevre Uzunluğu
+                    input.each-calculator-input.short-input#tdee-weight
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Boy
+                    input.each-calculator-input.short-input#tdee-height
+                .each-calculator-input-wrapper 
+                    .each-calculator-input-label Yaş
+                    input.each-calculator-input.short-input#tdee-age 
                 .calculate-button Hesapla
                 .each-calculator-result
                     .each-calculator-result-title
@@ -22,32 +36,32 @@ block content
                         .each-calculator-button#male Erkek
                         .each-calculator-button#female Kadın
                 .each-calculator-input-wrapper 
+                    .each-calculator-input-label Kilo
+                    input.each-calculator-input.short-input#tdee-weight
+                .each-calculator-input-wrapper 
                     .each-calculator-input-label Boy
-                    input.each-calculator-input.short-input 
+                    input.each-calculator-input.short-input#tdee-height
                 .each-calculator-input-wrapper 
                     .each-calculator-input-label Yaş
-                    input.each-calculator-input.short-input 
+                    input.each-calculator-input.short-input#tdee-age 
                 .each-calculator-input-wrapper 
                     .each-calculator-input-label Aktiflik Seviyesi
-                    select#tdee_activity
-                        option(value='1') Çok Az Aktif
-                        option(value='2') Az Aktif
-                        option(value='3') Orta Aktif
-                        option(value='4') Çok Aktif
-                        option(value='5') Aşırı Aktif
-                .calculate-button Hesapla
+                .calculate-button#tdee-button Hesapla
                 .each-calculator-result
                     .each-calculator-result-title
-                    .each-calculator-result-text
+                    .each-calculator-result-text#tdee-result-text
             .each-calculator
                 .each-calculator-title 1 Rep Maks
                 .each-calculator-input-wrapper
-                    .each-calculator-input-label 
+                    .each-calculator-input-label Ağırlık
+                    input.each-calculator-input 
+                .each-calculator-input-wrapper
+                    .each-calculator-input-label Tekrar
                     input.each-calculator-input 
                 .calculate-button Hesapla
                 .each-calculator-result
-                    .each-calculator-result-title
-                    .each-calculator-result-text
+                    .each-calculator-result-title#one-rep-max-result-title
+                    .each-calculator-result-text#one-rep-max-result
         .links-wrapper
             a.each-link-wrapper Paketler
             a.each-link-wrapper Diyet
