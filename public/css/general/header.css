@@ -20,6 +20,7 @@
     min-width: 250px;
     font-size: 36px;
     text-decoration: none;
+    margin-left: 20px;
 }
 .navbar {
     display: flex;
@@ -166,6 +167,16 @@
         min-width: 60px;
     }
 }
-
-
+@media (max-width: 400px) {
+    .each-program-wrapper {
+        width: 90%;
+    }
+    a.title-text-wrapper {
+        min-width: 220px;
+        margin-left: 10px;
+    }
+    .title-text {
+        font-size: 30px;
+    }
+}
 
