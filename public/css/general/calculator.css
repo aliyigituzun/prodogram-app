@@ -61,6 +61,7 @@
     color: rgb(0, 0, 0);
     margin-top: 20px;
 }
+
 .each-calculator-input-wrapper {
     display: flex;
     flex-direction: column;
@@ -79,14 +80,24 @@
 }
 .buttons-wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
 }
 .each-calculator-button {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 30px;
+    text-align: center;
+    min-width: 60px;
+    width: auto;
+    min-height: 30px;
+    height: auto;
+    padding: 0px 5px;
     background-color: rgb(254, 254, 254);
     color: rgb(7, 7, 7);
     font-size: 16px;
@@ -95,10 +106,33 @@
     border-radius: 4px;
     margin-right: 7px;
 }
+.each-tdee-activity-button {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90px;
+    height: 40px;
+    padding: 0px 5px;
+    background-color: rgb(254, 254, 254);
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 7px; 
+    
+}
 .bodyfat-selected-gender {
     background-color: rgb(81, 81, 81);
 }
 .tdee-selected-gender {
+    background-color: rgb(81, 81, 81);
+}
+.tdee-selected-activity {
     background-color: rgb(81, 81, 81);
 }
 .calculate-button {

@@ -4,7 +4,6 @@ window.addEventListener('load', () => {
     let sidebarOpen = false;
 
     document.addEventListener('click', (e) => {
-        console.log(e.target.id + " " + sidebarOpen);
         if(e.target.id === 'sidebar-button' && !sidebarOpen) {
 
             sidebar.classList.add('sidebar-open-animation');
