@@ -5,6 +5,27 @@ window.addEventListener('load', () => {
     const oneRepButton = document.getElementById('one-input');
 
     const tdeeResult = document.getElementById('tdee-result-text');
+    const bodyfatResult = document.getElementById('bodyfat-result-text');
+
+    calculateBodyfat = (gender, weight, height, waist, neck, hip) => {
+        let bodyfat = 0;
+        weight = weight * 2.2046;
+        height = height / 2.54;
+        waist = waist / 2.54;
+        neck = neck / 2.54;
+        hip = hip / 2.54;
+        if(gender === "male") {
+
+            bodyfat = (86.010 * Math.log10(waist - neck)) - (70.041 * Math.log10(height)) + 36.76;
+            
+        }
+        else {
+            bodyfat = (163.205 * Math.log10(waist + hip - neck)) - (97.684 * Math.log10(height)) - 78.387;
+        }
+        return bodyfat;
+
+        
+    }
 
     const calculateTDEE = (gender, activity, weight, height, age) => {
         let bmr = 0;
@@ -60,10 +81,29 @@ window.addEventListener('load', () => {
             e.target.classList.add('tdee-selected-activity')
         }
         if(e.target.id === 'bodyfat-button') {
+            let hip = 0;
             const weight = document.getElementById('bodyfat-weight').value;
             const height = document.getElementById('bodyfat-height').value;
-            const age = document.getElementById('bodyfat-age').value;
+            const waist = document.getElementById('bodyfat-waist-circumference').value;
+            const neck = document.getElementById('bodyfat-neck-circumference').value;
             const gender = document.querySelector('.bodyfat-selected-gender');
+
+            if(gender.id === "female") {
+                hip = document.getElementById('bodyfat-hip-circumference').value;
+            }
+            if((!gender || !weight || !height || !waist || !neck) || (gender.id === "female" && !hip)) {
+                bodyfatResult.innerHTML = 'Please fill out all fields';
+            }
+            else {
+                let bodyfat = calculateBodyfat(gender.id, weight, height, waist, neck, hip);
+                if(bodyfat == 0) {
+                    bodyfatResult.innerHTML = 'Please fill out all fields';
+                }
+                else {
+                    bodyfatResult.innerHTML = `Your bodyfat is ${bodyfat.toFixed(2)}%`;
+                }
+
+            }
         }
         if(e.target.id === 'tdee-button') {
             const weight = document.getElementById('tdee-weight').value;
