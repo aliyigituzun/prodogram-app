@@ -1,11 +1,8 @@
 window.addEventListener('load', () => {
 
-    const bodyfatButton = document.getElementById('bodyfat-button');
-    const tdeeButton = document.getElementById('tdee-button');
-    const oneRepButton = document.getElementById('one-input');
-
-    const tdeeResult = document.getElementById('tdee-result-text');
     const bodyfatResult = document.getElementById('bodyfat-result-text');
+    const tdeeResult = document.getElementById('tdee-result-text');
+    const oneRepResult = document.getElementById('one-rep-max-result-text');
 
     calculateBodyfat = (gender, weight, height, waist, neck, hip) => {
         let bodyfat = 0;
@@ -80,6 +77,8 @@ window.addEventListener('load', () => {
             }
             e.target.classList.add('tdee-selected-activity')
         }
+
+
         if(e.target.id === 'bodyfat-button') {
             let hip = 0;
             const weight = document.getElementById('bodyfat-weight').value;
@@ -128,6 +127,14 @@ window.addEventListener('load', () => {
         if(e.target.id === 'one-rep-button') {
             const weight = document.getElementById('one-rep-weight').value;
             const reps = document.getElementById('one-rep-reps').value;
+
+            if(!weight || !reps) {
+                oneRepResult.innerHTML = 'Please fill out all fields';
+            }
+            else {
+                let oneRepMax = weight * (36/(37 - reps));
+                oneRepResult.innerHTML = `Your one rep max is ${oneRepMax.toFixed(2)} kilograms`;
+            }
         }
     });
 });
