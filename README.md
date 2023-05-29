@@ -1,5 +1,5 @@
 # prodogram-app
-Prodogram Fit Website Frontend Codebase
+Prodogram Fit Website Frontend Codebase \n
 Written with NodeJS and native JavaScript
 Application in the making
 
