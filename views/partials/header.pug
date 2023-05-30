@@ -8,14 +8,14 @@ block head
                     .title-text.green DO
                     .title-text.white GRAM
                 .navbar
-                    a.each-navbar-item(href='/program') Paketler
-                    a.each-navbar-item(href='/exercise') Antrenman
-                    a.each-navbar-item(href='/diet') Diyet
-                    a.each-navbar-item(href='/faq') S.S.S.
-                    a.each-navbar-item(href='/calculator') Hesaplama
+                    a.each-navbar-item(href='/program')= __('Paketler')
+                    a.each-navbar-item(href='/exercise')= __('Antrenman')
+                    a.each-navbar-item(href='/diet')= __('Diyet')
+                    a.each-navbar-item(href='/faq')= __('S.S.S.')
+                    a.each-navbar-item(href='/calculator')= __('Hesaplama')
                     a.translation-wrapper
-                        .translation-button TR 
-                        .translation-button EN
+                        .translation-button#tr TR 
+                        .translation-button#en EN
                     .responsive-sidebar-icon#sidebar-button
                         .responsive-sidebar-icon-bar
                         .responsive-sidebar-icon-bar

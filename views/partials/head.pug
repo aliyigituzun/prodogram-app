@@ -19,8 +19,8 @@ html(lang="en")
             link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
           else
             link(rel='stylesheet' href=`/css/general/${file_name}.css`)
-      script(src='https://accounts.google.com/gsi/client')
       script(src='js/index/navbar.js')
+      script(src='js/index/header.js')
       if includes.external.js
         each file_name in includes.external.js
           if file_name == 'page'

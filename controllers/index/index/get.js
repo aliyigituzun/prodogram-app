@@ -1,4 +1,5 @@
 module.exports = (req, res) => {
+
     res.render('index/index', {
         title: 'Prodogram Fit',
         page: 'index/index',

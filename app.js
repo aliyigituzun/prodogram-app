@@ -3,9 +3,12 @@ const cluster = require('cluster');
 const dotenv = require('dotenv');
 const express = require('express');
 const favicon = require('serve-favicon');
+const i18n = require('i18n');
 const http = require('http');
 const path = require('path');
 const session = require('express-session');
+const cookieParser = require('cookie-parser');
+
 
 const numCPUs = process.env.WEB_CONCURRENCY || require('os').cpus().length;
 
@@ -35,7 +38,16 @@ if (cluster.isMaster) {
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'pug');
 
+  i18n.configure({
+    locales: ['en', 'tr'],
+    directory: path.join(__dirname, 'translations'),
+    defaultLocale: 'tr',
+    queryParameter: 'lang',
+    cookie: 'lang',
+  });
+
   app.use(express.static(path.join(__dirname, 'public')));
+  app.use(cookieParser());
   app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
   app.use(bodyParser.json({ limit: MAX_SERVER_UPLOAD_LIMIT }));
   app.use(bodyParser.urlencoded({
@@ -51,6 +63,7 @@ if (cluster.isMaster) {
   });
 
   app.use(sessionOptions);
+  app.use(i18n.init);
 
   app.use((req, res, next) => {
     if (!req.query || typeof req.query != 'object')
