@@ -13,21 +13,21 @@ block content
                         .each-calculator-button.bodyfat-gender#male Erkek
                         .each-calculator-button.bodyfat-gender#female Kadın
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Omuz Çevre Uzunluğu
+                    .each-calculator-input-label= __('Omuz Çevre Uzunluğu')
                     input.each-calculator-input.short-input#bodyfat-neck-circumference
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Bel Çevre Uzunluğu
+                    .each-calculator-input-label= __('Bel Çevre Uzunluğu')
                     input.each-calculator-input.short-input#bodyfat-waist-circumference
                 .each-calculator-input-wrapper#hip(style="display: none;")
-                    .each-calculator-input-label Kalça Çevre Uzunluğu
+                    .each-calculator-input-label= __('Kalça Çevre Uzunluğu')
                     input.each-calculator-input.short-input#bodyfat-hip-circumference
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Boy
+                    .each-calculator-input-label= __('Boy')
                     input.each-calculator-input.short-input#bodyfat-height
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Kilo
+                    .each-calculator-input-label= __('Kilo')
                     input.each-calculator-input.short-input#bodyfat-weight
-                .calculate-button#bodyfat-button Hesapla
+                .calculate-button#bodyfat-button= __('Hesapla')
                 .each-calculator-result
                     .each-calculator-result-title
                     .each-calculator-result-text#bodyfat-result-text
@@ -39,14 +39,14 @@ block content
                         .each-calculator-button.tdee-gender#male Erkek
                         .each-calculator-button.tdee-gender#female Kadın
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Kilo
+                    .each-calculator-input-label= __('Kilo')
                     input.each-calculator-input.short-input#tdee-weight
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Boy
+                    .each-calculator-input-label= __('Boy')
                     input.each-calculator-input.short-input#tdee-height
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Yaş
-                    input.each-calculator-input.short-input#tdee-age 
+                    .each-calculator-input-label= __('Yaş')
+                    input.each-calculator-input.short-input#tdee-age
                 .each-calculator-input-wrapper 
                     .each-calculator-input-label Aktiflik Seviyesi
                     .buttons-wrapper
