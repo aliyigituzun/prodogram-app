@@ -20,8 +20,7 @@ window.addEventListener('load', () => {
             bodyfat = (163.205 * Math.log10(waist + hip - neck)) - (97.684 * Math.log10(height)) - 78.387;
         }
         return bodyfat;
-
-        
+  
     }
 
     const calculateTDEE = (gender, activity, weight, height, age) => {
@@ -87,7 +86,7 @@ window.addEventListener('load', () => {
             const neck = document.getElementById('bodyfat-neck-circumference').value;
             const gender = document.querySelector('.bodyfat-selected-gender');
 
-            if(gender.id === "female") {
+            if( gender && gender.id === "female") {
                 hip = document.getElementById('bodyfat-hip-circumference').value;
             }
             if((!gender || !weight || !height || !waist || !neck) || (gender.id === "female" && !hip)) {
