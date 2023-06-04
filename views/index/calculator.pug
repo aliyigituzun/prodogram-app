@@ -3,15 +3,15 @@ block content
     .all-content-wrapper
         .calculator-wrapper
             .calculator-info-wrapper
-                .calculator-info-title.green Hesaplama
+                .calculator-info-title.green= __('Hesaplama')
                 .calculator-info-text.white Aşağıda yağ oranı, TDEE ve 1 Rep Maks hesaplama araçları bulunmaktadır. 
             .each-calculator
-                .each-calculator-title Yağ Oranı 
+                .each-calculator-title= __('Yağ Oranı')
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Cinsiyet
+                    .each-calculator-input-label= __('Cinsiyet')
                     .buttons-wrapper
-                        .each-calculator-button.bodyfat-gender#male Erkek
-                        .each-calculator-button.bodyfat-gender#female Kadın
+                        .each-calculator-button.bodyfat-gender#male= __('Erkek')
+                        .each-calculator-button.bodyfat-gender#female= __('Kadın')
                 .each-calculator-input-wrapper 
                     .each-calculator-input-label= __('Omuz Çevre Uzunluğu')
                     input.each-calculator-input.short-input#bodyfat-neck-circumference

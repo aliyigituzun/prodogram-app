@@ -2,25 +2,19 @@ extends ../partials/header
 block content
     .all-content-wrapper
         .info-wrapper
-            .title-wrapper Sıkça Sorulan Sorular
-            .each-subtitle-wrapper Koçluk paketleriniz ne sunuyor ?
-            .each-paragraph-wrapper Gelişim için anahtar olan iki tarafın da özveriyle sürece dahil olmasıdır. Koçluk paketimizde kişinin gelişiminin haftalık olarak değerlendirilmesi ve buna bağlı olarak gerekli dokunuşların fikir alışverişi ile kararlaştırılması esastır. Bu süreçte kafanızda oluşabilecek soru işaretleri için ise WhatsApp hattımızdan size yardımcı olacağız.
-            .each-subtitle-wrapper Sunduğunuz hizmet nedir ?
-            .each-paragraph-wrapper Kişinin seviyesine ve yaşam tarzına uygun olarak hazırlanmış antrenman ve diyet programlarının yanı sıra besin takviyelerinin planlanmasını sağlıyoruz. Tüm talimatları rahatlıkla anlayabilmeniz için özenle yazılan pro(do)gram dokümanınızı sizlerle tercihinize göre ister PDF ister DOC formunda paylaşıyoruz. Sekiz haftalık ağırlıklarınızı arttırıp güçlenmenizi sağlayacak seviyenize göre programlar paylaşıyoruz. Koçluk hizmetimiz sizinle özel olarak ilgileniyoruz.
-            .each-subtitle-wrapper Tek seferlik program fiyatınız nedir ?
-            .each-paragraph-wrapper Tek seferlik programın fiyatını Instagram hesabımız prodogram üzerinden öğrenebilirsiniz.
-            .each-paragraph-wrapper.bulleted • Öncelik her zaman kişinin kendi hedefleridir.
-            .each-paragraph-wrapper.bulleted • Kişinin kalori ihtiyacına göre diyet ve besin takviyesi planları içerir.
-            .each-paragraph-wrapper.bulleted • Hareketlerin nasıl yapıldıklarına dair detaylı açıklamalar ve tavsiyeler mevcuttur.
-            .each-paragraph-wrapper.bulleted • Kişinin hedeflerine özel bir kardiyo programı içerir.
-            .each-paragraph-wrapper.bulleted • Kişinin seviyesine ve müsaitlik durumuna göre tasarlanır.
-            .each-paragraph-wrapper An itibariyle kontenjan mevcuttur, hedeflerinize ulaşacağınız yolda sizinle çalışmak için sabırsızlanıyoruz!
-        .links-wrapper
-            a.each-link-wrapper(href='/program') Paketler
-            a.each-link-wrapper(href='/diet') Diyet
-            a.each-link-wrapper(href='/exercise') Antrenman
-            a.each-link-wrapper(href='/calculator') Hesaplama
-            a.each-link-wrapper(href='/faq') S.S.S
+            .title-wrapper= __('Sıkça Sorulan Sorular')
+            .each-subtitle-wrapper= __('Koçluk paketleriniz ne sunuyor ?')
+            .each-paragraph-wrapper= __('Gelişim için anahtar olan iki tarafın da özveriyle sürece dahil olmasıdır. Koçluk paketimizde kişinin gelişiminin haftalık olarak değerlendirilmesi ve buna bağlı olarak gerekli dokunuşların fikir alışverişi ile kararlaştırılması esastır. Bu süreçte kafanızda oluşabilecek soru işaretleri için ise WhatsApp hattımızdan size yardımcı olacağız.')
+            .each-subtitle-wrapper= __('Sunduğunuz hizmet nedir ?')
+            .each-paragraph-wrapper= __('seviye')
+            .each-subtitle-wrapper= __('Tek seferlik program fiyatınız nedir ?')
+            .each-paragraph-wrapper= __('Tek seferlik programın fiyatını Instagram hesabımız prodogram üzerinden öğrenebilirsiniz.')
+            .each-paragraph-wrapper.bulleted= __('• Öncelik her zaman kişinin kendi hedefleridir.')
+            .each-paragraph-wrapper.bulleted= __('• Kişinin kalori ihtiyacına göre diyet ve besin takviyesi planları içerir.')
+            .each-paragraph-wrapper.bulleted= __('• Hareketlerin nasıl yapıldıklarına dair detaylı açıklamalar ve tavsiyeler mevcuttur.')
+            .each-paragraph-wrapper.bulleted= __('• Kişinin hedeflerine özel bir kardiyo programı içerir.')
+            .each-paragraph-wrapper.bulleted= __('• Kişinin seviyesine ve müsaitlik durumuna göre tasarlanır.')
+            .each-paragraph-wrapper= __('An itibariyle kontenjan mevcuttur, hedeflerinize ulaşacağınız yolda sizinle çalışmak için sabırsızlanıyoruz!')
         .footer-wrapper
             .footer-text-wrapper
                 .footer-text.white PRO

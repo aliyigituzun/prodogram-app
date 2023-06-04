@@ -73,6 +73,7 @@
     height: auto;
     background-color: rgb(0, 0, 0);
     font-family: 'Russo One', sans-serif;
+    margin-bottom: 40px;
 }
 .title-wrapper {
     display: flex;
