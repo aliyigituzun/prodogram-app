@@ -4,7 +4,7 @@ block content
         .calculator-wrapper
             .calculator-info-wrapper
                 .calculator-info-title.green= __('Hesaplama')
-                .calculator-info-text.white Aşağıda yağ oranı, TDEE ve 1 Rep Maks hesaplama araçları bulunmaktadır. 
+                .calculator-info-text.white= __('Aşağıda yağ oranı, TDEE ve 1 Rep Maks hesaplama araçları bulunmaktadır.') 
             .each-calculator
                 .each-calculator-title= __('Yağ Oranı')
                 .each-calculator-input-wrapper 
@@ -34,10 +34,10 @@ block content
             .each-calculator
                 .each-calculator-title TDEE 
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Cinsiyet
+                    .each-calculator-input-label= __('Cinsiyet')
                     .buttons-wrapper
-                        .each-calculator-button.tdee-gender#male Erkek
-                        .each-calculator-button.tdee-gender#female Kadın
+                        .each-calculator-button.tdee-gender#male= __('Erkek')
+                        .each-calculator-button.tdee-gender#female= __('Kadın')
                 .each-calculator-input-wrapper 
                     .each-calculator-input-label= __('Kilo')
                     input.each-calculator-input.short-input#tdee-weight
@@ -48,26 +48,26 @@ block content
                     .each-calculator-input-label= __('Yaş')
                     input.each-calculator-input.short-input#tdee-age
                 .each-calculator-input-wrapper 
-                    .each-calculator-input-label Aktiflik Seviyesi
+                    .each-calculator-input-label= __('Aktiflik Seviyesi')
                     .buttons-wrapper
-                        .each-tdee-activity-button.tdee-activity#sedentary Hareketsiz
-                        .each-tdee-activity-button.tdee-activity#light Hafif Aktif
-                        .each-tdee-activity-button.tdee-activity#moderate Orta Aktif
-                        .each-tdee-activity-button.tdee-activity#active Aktif
-                        .each-tdee-activity-button.tdee-activity#very-active Sporcu
-                .calculate-button#tdee-button Hesapla
+                        .each-tdee-activity-button.tdee-activity#sedentary= __('Hareketsiz')
+                        .each-tdee-activity-button.tdee-activity#light= __('Hafif Aktif')
+                        .each-tdee-activity-button.tdee-activity#moderate= __('Orta Aktif')
+                        .each-tdee-activity-button.tdee-activity#active= __('Aktif')
+                        .each-tdee-activity-button.tdee-activity#very-active= __('Sporcu')
+                .calculate-button#tdee-button= __('Hesapla')
                 .each-calculator-result
                     .each-calculator-result-title
                     .each-calculator-result-text#tdee-result-text
             .each-calculator
-                .each-calculator-title 1 Rep Maks
+                .each-calculator-title= __('1 Rep Maks')
                 .each-calculator-input-wrapper
-                    .each-calculator-input-label Ağırlık
+                    .each-calculator-input-label= __('Ağırlık')
                     input.each-calculator-input.short-input#one-rep-weight 
                 .each-calculator-input-wrapper
-                    .each-calculator-input-label Tekrar
+                    .each-calculator-input-label= __('Tekrar')
                     input.each-calculator-input.short-input#one-rep-reps 
-                .calculate-button#one-rep-button Hesapla
+                .calculate-button#one-rep-button= __('Hesapla')
                 .each-calculator-result
                     .each-calculator-result-title
                     .each-calculator-result-text#one-rep-max-result-text
