@@ -12,12 +12,32 @@ window.addEventListener('load', () => {
         neck = neck / 2.54;
         hip = hip / 2.54;
         if(gender === "male") {
-
+            
+            if(waist < neck || waist < 60 || waist == 0 || neck > 60 || neck == 0 || height == 0 || weight == 0 || typeof waist == 'undefined' || typeof neck == 'undefined' || typeof height == 'undefined' || typeof weight == 'undefined') {
+                if (document.cookie.lang === 'en') {
+                    bodyfatResult.innerHTML = 'Please fill out all fields with valid values';
+                }
+                else {
+                    bodyfatResult.innerHTML = 'Lütfen bütün alanları geçerli değerlerle doldurunuz';
+                }
+            }
+            if(waist == neck) {
+                waist++;
+            }
             bodyfat = (86.010 * Math.log10(waist - neck)) - (70.041 * Math.log10(height)) + 36.76;
             
         }
         else {
             bodyfat = (163.205 * Math.log10(waist + hip - neck)) - (97.684 * Math.log10(height)) - 78.387;
+        }
+        if (isNaN(bodyfat) || bodyfat == Infinity || bodyfat == -Infinity || bodyfat < 0) {
+            if (document.cookie.lang === 'en') {
+                bodyfatResult.innerHTML = 'Please fill out all fields with valid values';
+            }
+            else {
+                bodyfatResult.innerHTML = 'Lütfen bütün alanları geçerli değerlerle doldurunuz';
+            }
+            return 0;
         }
         return bodyfat;
   
@@ -95,7 +115,12 @@ window.addEventListener('load', () => {
             else {
                 let bodyfat = calculateBodyfat(gender.id, weight, height, waist, neck, hip);
                 if(bodyfat == 0) {
-                    bodyfatResult.innerHTML = 'Please fill out all fields';
+                    if (document.cookies.lang === 'en') {
+                        bodyfatResult.innerHTML = 'Please fill out all fields with valid values';
+                    }
+                    else {
+                        bodyfatResult.innerHTML = 'Lütfen bütün alanları geçerli değerlerle doldurunuz';
+                    }
                 }
                 else {
                     bodyfatResult.innerHTML = `Your bodyfat is ${bodyfat.toFixed(2)}%`;
