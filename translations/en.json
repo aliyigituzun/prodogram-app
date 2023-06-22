@@ -3,7 +3,6 @@
 	"Paketler": "Packages",
 	"Diyet": "Diet",
 	"Hesaplama": "Tools",
-	"S.S.S.": "F.A.Q.",
 	"Antrenman": "Exercise",
 	"Spor salonu denildiğinde genellikle insanların formunda kalmak için gittikleri ağırlıklarının ve koşu bandının bulunduğu bir yer akla gelir. Spor salonu  insanların kondisyon ölçütleri, performanslarını ve vücut estetiklerini bir veya daha fazla amaca yönelik olarak geliştirmek için gittikleri yerlerdir.": "When you think of the gym, you usually think of a place where weights and treadmills are used to stay in shape. The gym is where people go to improve their fitness level, performance, and body aesthetics for one or more purposes.",
 	"Prodogram sizin spor ve diyet planlarınızı her türlü hedefinize yaşam tarzınıza ve spor geçmişinize uygun hale getirerek gerçek anlamda kişiselleştirmektedir. İster bir spor salonuna gitme imkanınız olsun ister olmasın. İster patlayıcı kuvvet inşa etmek isteyin isterse estetik bir vücut isterseniz aynı anda birden fazla hedefiniz olsun. Gerek yeni başlayanlara gerekse yıllardır spor ile yaşayan insanlara rehber olmanın peşindeyiz.": "The prodogram truly personalizes your fitness and diet plans by shaping them to your goals, lifestyle and fitness background. Whether you have the opportunity to go to a gym or not. Whether you want to build explosive strength, or you want an aesthetic body, you have multiple goals at once. We seek to be a guide for both beginners and people who have been living with sports for years.",
@@ -62,6 +61,7 @@
 	"1 Rep Maks": "One Rep Max",
 	"Ağırlık": "Weight",
 	"Tekrar": "Reps",
-	"Aşağıda yağ oranı, TDEE ve 1 Rep Maks hesaplama araçları bulunmaktadır.": "Aşağıda yağ oranı, TDEE ve 1 Rep Maks hesaplama araçları bulunmaktadır.",
-	"fat explanation": "When attempting to gain muscle mass, fat intake plays a crucial role in hormone production, energy provision, and overall health. It is generally recommended to consume about 20-30% of total daily calories from healthy fats, including sources such as nuts, avocados, olive oil, and fatty fish, while keeping saturated fats and trans fats limited for optimal muscle-building and overall well-being."
+	"tools-info": "Tools for calculating bodyfat percentage, One Rep Max, and TDEE is available below.",
+	"fat explanation": "When attempting to gain muscle mass, fat intake plays a crucial role in hormone production, energy provision, and overall health. It is generally recommended to consume about 20-30% of total daily calories from healthy fats, including sources such as nuts, avocados, olive oil, and fatty fish, while keeping saturated fats and trans fats limited for optimal muscle-building and overall well-being.",
+	"S.S.S.": "F.A.Q."
 }

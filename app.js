@@ -78,6 +78,8 @@ if (cluster.isMaster) {
   });
 
   app.use('/', indexRouteController);
+  //app.use('/admin', adminRouteController);
+
 
 
   server.listen(PORT, () => {

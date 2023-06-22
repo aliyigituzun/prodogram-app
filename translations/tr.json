@@ -31,7 +31,6 @@
 	"carbo": "Karbonhidrat Alımı",
 	"fat explanation": "Kas kütlesi kazanmaya çalışırken, yağ alımı hormon üretiminde, enerji sağlanmasında ve genel sağlıkta çok önemli bir rol oynar. Optimum kas geliştirme ve genel sağlık için doymuş yağları ve trans yağları sınırlı tutarken, fındık, avokado, zeytinyağı ve yağlı balık gibi kaynaklar da dahil olmak üzere günlük toplam kalorinin yaklaşık %20-30'unu sağlıklı yağlardan tüketmeniz önerilir. Bununla birlikte, bireysel ihtiyaçlar değişebilir ve bir sağlık uzmanına veya lisanslı bir diyetisyene danışmak, belirli hedeflere ve diyet tercihlerine göre ideal yağ alımını belirlemeye yardımcı olabilir.",
 	"\"Yeşillikler\" ıspanak, lahana ve brokoli gibi yeşil yapraklı sebzelerdir. Vitaminler, mineraller ve lif açısından zengin oldukları, genel sağlığı iyileştirdikleri, sindirimi destekledikleri ve vücut için gerekli besinleri sağladıkları için diyete yeşilliklerin dahil edilmesi önemlidir. Yeşilleri diyete dahil etmek ve besleyicilik açısından sağlıklı beslenme planının oluşturulmasını sağlar.": "\"Yeşillikler\" ıspanak, lahana ve brokoli gibi yeşil yapraklı sebzelerdir. Vitaminler, mineraller ve lif açısından zengin oldukları, genel sağlığı iyileştirdikleri, sindirimi destekledikleri ve vücut için gerekli besinleri sağladıkları için diyete yeşilliklerin dahil edilmesi önemlidir. Yeşilleri diyete dahil etmek ve besleyicilik açısından sağlıklı beslenme planının oluşturulmasını sağlar.",
-	"S.S.S": "S.S.S",
 	"Powerlifting": "Powerlifting, üç ana hareketi temel alan bir kuvvet sporudur bu hareketler squat, bench press ve deadlift. Powerlifting'in amacı bir ortamda, bu üç hareketin her birinde mümkün olan en fazla ağırlığı tek bir tekrarla kaldırmaktır. Powerlifting, güçlerini arttırmak, kas kütlesi oluşturmak ve güce dayalı etkinliklere katılmak isteyen kişilere hitap eder. Sağlam bir bodybuilding temeli için kimi vücut geliştiricilere göre esansiyeldir.",
 	"Calisthenics": "Calisthenics, güç, esneklik ve dayanıklılık oluşturmak için vücut ağırlığı hareketlerini kullanan bir antrenman şeklidir. Şınav,barfiks, squat, ve plank gibi hareketler temel alınır tekrar sayısı arttırılarak veya farklı varyasyonlarla giderek zorlaştırılır. Calisthenics, tüm fitness seviyelerindeki bireyler için uygun, çok yönlü ve erişilebilir bir antrenman şeklidir. Fiziksel kondisyonu, vücut kontrolünü , kas gelişimini ve fonksiyonel gücü ağırlıklara veya makinelere muhtaç olmadan geliştirmek için bir alternatif sunar.",
 	"Cardio": "Kardiyovasküler egzersizin kısaltması olan kardiyo, kalp atış hızını artıran ve kardiyovasküler sağlığı destekleyen her türlü fiziksel aktiviteyi ifade eder. Tipik olarak, nefes almayı ve oksijen tüketimini artıran koşma, bisiklete binme, yüzme veya aerobik gibi aktivitelerdir. Kardiyovasküler kondisyon geliştirmek, dayanıklılığı artırmak, kalori yakmak ve genel kalp sağlığını desteklemek için kullanılan kardiyo her türlü antrenmanın önemli bir parçasıdır.",
@@ -62,5 +61,6 @@
 	"Sporcu": "Sporcu",
 	"1 Rep Maks": "1 Rep Maks",
 	"Ağırlık": "Ağırlık",
-	"Tekrar": "Tekrar"
+	"Tekrar": "Tekrar",
+	"tools-info": "Yağ oranı, 1 Rep Maks ve TDEE hesaplama araçları aşağıda bulunmaktadır."
 }
