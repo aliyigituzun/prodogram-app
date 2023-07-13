@@ -1,0 +1,72 @@
+extends ../partials/header
+block content
+    .all-content-wrapper
+        .info-wrapper
+            .title-wrapper= __('Project 28 Calisthenics')
+            .each-paragraph-wrapper= __('project-info')
+        .form-wrapper
+            .each-input-line-wrapper
+                .each-input-wrapper
+                    .input-title-wrapper= __('Name:')
+                    input.input-field(type='text', name='name')#name
+                .each-input-wrapper
+                    .input-title-wrapper= __('Email:')
+                    input.input-field(type='text', name='email')#email
+            .each-subtitle-wrapper= __('calculate-tdee')
+            .each-paragraph-wrapper= __('tdee-paragraph')
+            .each-input-line-wrapper 
+                .each-input-wrapper
+                    .input-title-wrapper= __('Weight:')
+                    input.input-field(type='text', name='weight')#weight
+                .each-input-wrapper
+                    .input-title-wrapper= __('Height:')
+                    input.input-field(type='text', name='height')#height
+            .each-input-line-wrapper 
+                .each-input-wrapper
+                    .input-title-wrapper= __('Age:')
+                    input.input-field(type='text', name='age')#age
+            .each-input-line-wrapper#button-input-wrapper
+                .one-line-input-title= __('tdee-activity')
+                .input-buttons-wrapper
+                    .each-input-button.tdee-activity#sedentary= __('Hareketsiz')
+                    .each-input-button.tdee-activity#light= __('Hafif Aktif')
+                    .each-input-button.tdee-activity#moderate= __('Orta Aktif')
+                    .each-input-button.tdee-activity#active= __('Aktif')
+                    .each-input-button.tdee-activity#very-active= __('Sporcu')
+            .each-subtitle-wrapper= __('goals')
+            .each-paragraph-wrapper= __('goals-paragraph')
+            .each-input-line-wrapper#goal-wrapper
+                .toggle-wrapper
+                    .each-option-wrapper#lose-weight= __('lose')
+                    .each-option-wrapper#gain-weight= __('gain')
+            .each-subtitle-wrapper= __('stats')
+            .each-paragraph-wrapper= __('stats-paragraph')
+            .each-input-line-wrapper 
+                .each-input-wrapper
+                    .input-title-wrapper= __('Push Up:')
+                    input.input-field(type='text', name='push-up')#push-up
+                .each-input-wrapper
+                    .input-title-wrapper= __('Pull Up:')
+                    input.input-field(type='text', name='pull-up')#pull-up
+                .each-input-wrapper
+                    .input-title-wrapper= __('Squat:')
+                    input.input-field(type='text', name='squat')#squat
+        .footer-wrapper
+            .footer-text-wrapper
+                .footer-text.white PRO
+                .footer-text.green DO
+                .footer-text.white GRAM
+    .responsive-sidebar-wrapper#sidebar
+        a.sidebar-title-text-wrapper(href='/')
+            .title-text.white PRO
+            .title-text.green DO
+            .title-text.white GRAM
+        .sidebar
+            a.each-sidebar-item(href='/program')= __('Paketler')
+            a.each-sidebar-item(href='/exercise')= __('Antrenman')
+            a.each-sidebar-item(href='/diet')= __('Diyet')
+            a.each-sidebar-item(href='/faq')= __('S.S.S.')
+            a.each-sidebar-item(href='/calculator')= __('Hesaplama')
+            a.translation-wrapper
+                .translation-button#tr TR 
+                .translation-button#en EN             
