@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const project28Entry = require('./../project28Entry/Project28Entry.js');
 const setIntensity = require('./functions/setIntensity.js');
 const calculateTdee = require('./functions/calculateTdee.js');
 const setDays = require('./functions/setDays.js');
@@ -34,20 +35,14 @@ project28Schema.statics.createProject28 = function (data, callback) {
   
   const Project28 = this;
 
-  // project28Entry.createEntry(data, (err, res) => {
-  //   if (err || !res) {
-  //     console.log(err);
-  //     return res.status(500).send();
-  //   }
-  //   if (res) {
-  //     console.log("Project28.js res!");
-      
-  //   }
-  //   return res.status(500).send();
-  // });
-
-
-    const intensity = setIntensity(data);
+  project28Entry.createEntry(data, (err, res) => {
+    if (err || !res) {
+      console.log(err);
+      return res.status(500).send();
+    }
+    if (res) {
+      console.log("Project28.js res!");
+      const intensity = setIntensity(data);
       const tdee = calculateTdee(data.weight, data.height, data.age, data.activity);
       const days = setDays(intensity, data.pushup, data.pullup, data.squat, data.goals);
 
@@ -66,7 +61,9 @@ project28Schema.statics.createProject28 = function (data, callback) {
       const newProject28 = new Project28(project28Data);
       newProject28.save();
       return callback({ error: null, success: true, id: newProject28._id });
-  
+    }
+    return res.status(500).send();;
+  })
 
 };
 
