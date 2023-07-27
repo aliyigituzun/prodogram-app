@@ -88,5 +88,7 @@
 	"Sets": "Sets",
 	"Reps": "Reps",
 	"Seconds": "Seconds",
-	"Minutes": "Minutes"
+	"Minutes": "Minutes",
+	"Sec.": "Sec.",
+	"Min.": "Min."
 }

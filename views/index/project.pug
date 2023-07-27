@@ -2,8 +2,8 @@ extends ../partials/header
 block content
     .all-content-wrapper
         .info-wrapper
-            .title-wrapper#project28= __('Project 28 Calisthenics')
-            .each-paragraph-wrapper= __('project-info')
+            .project-title-wrapper#project28 Project 28
+            .each-paragraph-wrapper info
         .form-wrapper
             .each-input-line-wrapper
                 .each-input-wrapper
@@ -12,20 +12,18 @@ block content
                 .each-input-wrapper
                     .input-title-wrapper= __('Email:')
                     input.input-field(type='text', name='email')#email
-            .each-subtitle-wrapper= __('calculate-tdee')
-            .each-paragraph-wrapper= __('tdee-paragraph')
             .each-input-line-wrapper 
                 .each-input-wrapper
                     .input-title-wrapper= __('Weight:')
-                    input.input-field(type='number', name='weight' oninput="this.value = this.value.replace(/[^0-9]/g, '')")#weight
+                    input.input-field(placeholder='kg', type='number', name='weight' oninput="this.value = this.value.replace(/[^0-9]/g, '')")#weight
                 .each-input-wrapper
                     .input-title-wrapper= __('Height:')
-                    input.input-field(type='number', name='height')#height
-            .each-input-line-wrapper 
+                    input.input-field(placeholder='cm' type='number', name='height')#height
+            .each-input-line-wrapper#centered-wrapper
                 .each-input-wrapper
                     .input-title-wrapper= __('Age:')
                     input.input-field(type='number', name='age' oninput="this.value = this.value.replace(/[^0-9]/g, '')")#age
-            .each-input-line-wrapper#button-input-wrapper
+            .each-input-line-wrapper#column
                 .one-line-input-title= __('tdee-activity')
                 .input-buttons-wrapper
                     .each-input-button.tdee-activity(data-value=1)#sedentary= __('Hareketsiz')
@@ -33,15 +31,13 @@ block content
                     .each-input-button.tdee-activity(data-value=3)#moderate= __('Orta Aktif')
                     .each-input-button.tdee-activity(data-value=4)#active= __('Aktif')
                     .each-input-button.tdee-activity(data-value=5)#very-active= __('Sporcu')
-            .each-subtitle-wrapper= __('goals')
-            .each-paragraph-wrapper= __('goals-paragraph')
+            .each-subtitle-wrapper#goals= __('goals')
             .each-input-line-wrapper#centered-wrapper
                 .toggle-wrapper
                     .each-option-wrapper#lose-weight(data-value=0)= __('lose')
                     .each-option-wrapper#gain-weight(data-value=1)= __('gain')
             .each-subtitle-wrapper= __('stats')
-            .each-paragraph-wrapper= __('stats-paragraph')
-            .each-input-line-wrapper 
+            .each-input-line-wrapper#stats
                 .each-input-wrapper
                     .input-title-wrapper= __('Push Up:')
                     input.input-field#pushup(type='number', name='push-up' oninput="this.value = this.value.replace(/[^0-9]/g, '')")

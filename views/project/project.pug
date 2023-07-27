@@ -22,12 +22,15 @@ block content
                                 if i.reps
                                     .each-exercise-reps #{i.reps} #{__('Reps')}
                                 else if i.seconds 
-                                    .each-exercise-reps #{i.seconds} #{__('Seconds')} 
+                                    .each-exercise-reps #{i.seconds} #{__('Sec.')} 
                                 else if i.minutes 
-                                    .each-exercise-reps #{i.minutes} #{__('Minutes')} 
+                                    .each-exercise-reps #{i.minutes} #{__('Min.')} 
                                 else if i.max
                                     .each-exercise-reps MAX
                                 if i.detailsEn
+                                    .each-details-wrapper#details  #{i.detailsEn}
+                            if i.detailsEn
+                                .responsive-details-wrapper()
                                     .each-details-wrapper  #{i.detailsEn}
         .footer-wrapper
             .footer-text-wrapper
