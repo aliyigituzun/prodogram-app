@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const project28Entry = require('./../project28Entry/Project28Entry.js');
+const project28Entry = require('models/project28entry/Project28Entry.js');
 const setIntensity = require('./functions/setIntensity.js');
 const calculateTdee = require('./functions/calculateTdee.js');
 const setDays = require('./functions/setDays.js');
