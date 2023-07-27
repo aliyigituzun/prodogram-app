@@ -8,6 +8,7 @@ const http = require('http');
 const path = require('path');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const mongoose = require('mongoose');
 
 
 const numCPUs = process.env.WEB_CONCURRENCY || require('os').cpus().length;
@@ -28,6 +29,7 @@ if (cluster.isMaster) {
 
   dotenv.config({ path: path.join(__dirname, '.env') });
 
+  const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prodogramfit';
   const PORT = 8080;
   const MAX_SERVER_UPLOAD_LIMIT = 52428800;
   const MAX_SERVER_PARAMETER_LIMIT = 50000;
@@ -37,6 +39,11 @@ if (cluster.isMaster) {
 
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'pug');
+
+  mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  });
 
   i18n.configure({
     locales: ['en', 'tr'],

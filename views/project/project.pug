@@ -1,0 +1,50 @@
+extends ../partials/header
+block content
+    .all-content-wrapper
+        .info-wrapper
+            .title-wrapper#project28= __('Project 28 Calisthenics')
+            .applicant-info-wrapper
+                .applicant-info#name Name: #{project.name}
+            - var dayCount = 0
+            for day in project.days
+                - dayCount++
+                .each-day-wrapper
+                    
+                    for i in day
+                        if i.isTitle
+                            .each-day-title-wrapper Day #{dayCount} #{i.name}
+                        else
+                            .each-exercise-wrapper
+                                .each-exercise-name Exercise: #{i.name}
+                                if i.sets 
+                                    .each-exercise-sets #{i.sets / 1} #{__('Sets')}
+                                .x-wrapper X
+                                if i.reps
+                                    .each-exercise-reps #{i.reps} #{__('Reps')}
+                                else if i.seconds 
+                                    .each-exercise-reps #{i.seconds} #{__('Seconds')} 
+                                else if i.minutes 
+                                    .each-exercise-reps #{i.minutes} #{__('Minutes')} 
+                                else if i.max
+                                    .each-exercise-reps MAX
+                                if i.detailsEn
+                                    .each-details-wrapper  #{i.detailsEn}
+        .footer-wrapper
+            .footer-text-wrapper
+                .footer-text.white PRO
+                .footer-text.green DO
+                .footer-text.white GRAM
+    .responsive-sidebar-wrapper#sidebar
+        a.sidebar-title-text-wrapper(href='/')
+            .title-text.white PRO
+            .title-text.green DO
+            .title-text.white GRAM
+        .sidebar
+            a.each-sidebar-item(href='/program')= __('Paketler')
+            a.each-sidebar-item(href='/exercise')= __('Antrenman')
+            a.each-sidebar-item(href='/diet')= __('Diyet')
+            a.each-sidebar-item(href='/faq')= __('S.S.S.')
+            a.each-sidebar-item(href='/calculator')= __('Hesaplama')
+            a.translation-wrapper
+                .translation-button#tr TR 
+                .translation-button#en EN             

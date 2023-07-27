@@ -1,0 +1,115 @@
+.applicant-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.applicant-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    font-family: "Russo One", sans-serif;
+    color: white;
+}
+.days-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.each-day-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border: solid 3px rgba(152, 152, 152, 0.6);
+}
+.each-day-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background-color: rgba(152, 152, 152, 0.6);
+    font-size: 30px;
+}
+.each-exercise-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 0 10px;
+    border: solid 3px rgba(152, 152, 152, 0.6);
+    background-color: pink;
+}
+.each-exercise-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    font-size: 20px;
+    font-family: "Russo One", sans-serif;
+    color: white;
+    margin-left: 5%;
+
+}
+.each-exercise-sets {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 7%;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Russo One", sans-serif;
+    color: white;
+    margin-left: 2%;
+}
+.each-exercise-reps {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Russo One", sans-serif;
+    color: white;
+    margin-left: 2%;
+
+}
+.x-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4%;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Russo One", sans-serif;
+    color: white;
+}
+.each-details-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(152, 152, 152, 0.6);
+    font-size: 16px;
+}

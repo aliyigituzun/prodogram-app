@@ -29,5 +29,11 @@ html(lang="en")
             script(src=`/js/${page}.js`)
           else
             script(src=`/js/functions/${file_name}.js`)
+      script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-HKW3RRQX41')
+      script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HKW3RRQX41');
   body
     block head

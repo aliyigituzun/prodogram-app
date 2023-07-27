@@ -83,5 +83,10 @@
 	"stats-paragraph": "stats-paragraph",
 	"Push Up:": "Push Up:",
 	"Pull Up:": "Pull Up:",
-	"Squat:": "Squat:"
+	"Squat:": "Squat:",
+	"prepare": "prepare",
+	"Sets": "Sets",
+	"Reps": "Reps",
+	"Seconds": "Seconds",
+	"Minutes": "Minutes"
 }

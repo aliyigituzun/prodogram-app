@@ -2,7 +2,7 @@ extends ../partials/header
 block content
     .all-content-wrapper
         .info-wrapper
-            .title-wrapper= __('Project 28 Calisthenics')
+            .title-wrapper#project28= __('Project 28 Calisthenics')
             .each-paragraph-wrapper= __('project-info')
         .form-wrapper
             .each-input-line-wrapper
@@ -17,40 +17,43 @@ block content
             .each-input-line-wrapper 
                 .each-input-wrapper
                     .input-title-wrapper= __('Weight:')
-                    input.input-field(type='text', name='weight')#weight
+                    input.input-field(type='number', name='weight' oninput="this.value = this.value.replace(/[^0-9]/g, '')")#weight
                 .each-input-wrapper
                     .input-title-wrapper= __('Height:')
-                    input.input-field(type='text', name='height')#height
+                    input.input-field(type='number', name='height')#height
             .each-input-line-wrapper 
                 .each-input-wrapper
                     .input-title-wrapper= __('Age:')
-                    input.input-field(type='text', name='age')#age
+                    input.input-field(type='number', name='age' oninput="this.value = this.value.replace(/[^0-9]/g, '')")#age
             .each-input-line-wrapper#button-input-wrapper
                 .one-line-input-title= __('tdee-activity')
                 .input-buttons-wrapper
-                    .each-input-button.tdee-activity#sedentary= __('Hareketsiz')
-                    .each-input-button.tdee-activity#light= __('Hafif Aktif')
-                    .each-input-button.tdee-activity#moderate= __('Orta Aktif')
-                    .each-input-button.tdee-activity#active= __('Aktif')
-                    .each-input-button.tdee-activity#very-active= __('Sporcu')
+                    .each-input-button.tdee-activity(data-value=1)#sedentary= __('Hareketsiz')
+                    .each-input-button.tdee-activity(data-value=2)#light= __('Hafif Aktif')
+                    .each-input-button.tdee-activity(data-value=3)#moderate= __('Orta Aktif')
+                    .each-input-button.tdee-activity(data-value=4)#active= __('Aktif')
+                    .each-input-button.tdee-activity(data-value=5)#very-active= __('Sporcu')
             .each-subtitle-wrapper= __('goals')
             .each-paragraph-wrapper= __('goals-paragraph')
-            .each-input-line-wrapper#goal-wrapper
+            .each-input-line-wrapper#centered-wrapper
                 .toggle-wrapper
-                    .each-option-wrapper#lose-weight= __('lose')
-                    .each-option-wrapper#gain-weight= __('gain')
+                    .each-option-wrapper#lose-weight(data-value=0)= __('lose')
+                    .each-option-wrapper#gain-weight(data-value=1)= __('gain')
             .each-subtitle-wrapper= __('stats')
             .each-paragraph-wrapper= __('stats-paragraph')
             .each-input-line-wrapper 
                 .each-input-wrapper
                     .input-title-wrapper= __('Push Up:')
-                    input.input-field(type='text', name='push-up')#push-up
+                    input.input-field#pushup(type='number', name='push-up' oninput="this.value = this.value.replace(/[^0-9]/g, '')")
                 .each-input-wrapper
                     .input-title-wrapper= __('Pull Up:')
-                    input.input-field(type='text', name='pull-up')#pull-up
+                    input.input-field#pullup(type='number', name='pull-up' oninput="this.value = this.value.replace(/[^0-9]/g, '')")
                 .each-input-wrapper
                     .input-title-wrapper= __('Squat:')
-                    input.input-field(type='text', name='squat')#squat
+                    input.input-field#squat(type='number', name='squat' oninput="this.value = this.value.replace(/[^0-9]/g, '')")
+            .each-input-line-wrapper#centered-wrapper
+                .prepare-button-wrapper#submit-button= __('prepare')
+            .error-message#error
         .footer-wrapper
             .footer-text-wrapper
                 .footer-text.white PRO

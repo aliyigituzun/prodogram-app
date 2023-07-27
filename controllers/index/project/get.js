@@ -5,7 +5,7 @@ module.exports = (req, res) => {
         includes: {
             external: {
                 css: ['general', 'index', 'fontawesome', 'page', 'header', 'project'],
-                js: ['page', 'header', 'index', 'navbar']
+                js: ['page', 'header', 'index', 'navbar', 'serverRequest']
             }
         },
         url: '/project',
