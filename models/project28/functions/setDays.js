@@ -6,7 +6,7 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         return Math.round(number);
     }
 
-    const createBeginnerProgram = (pushup, pullup, squat) => {
+    const createBeginnerProgram = (pushup, pullup, squat, goals) => {
         //day 1 
         const day1Exercises = [];
         day1Exercises.push({name: 'Push', isTitle: true});
@@ -617,27 +617,27 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day1 
         const day1Exercises = [];
         day1Exercises.push({name: 'Push', isTitle: true});
-        day1Exercises.push({name: 'Handstand Push-Up', sets: 3, reps: pushup * 0.3, detailsEn: "Can have support from a wall."});
-        day1Exercises.push({name: 'Archer Push-Up', sets: 3, reps: pushup * 0.5});
-        day1Exercises.push({name: 'Negative One Arm Push-Up', sets: 3, reps: pushup * 0.4});
-        day1Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: pushup * 0.5, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
+        day1Exercises.push({name: 'Handstand Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.3), detailsEn: "Can have support from a wall."});
+        day1Exercises.push({name: 'Archer Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
+        day1Exercises.push({name: 'Negative One Arm Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
+        day1Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
         day1Exercises.push({name: 'Cross Arm Push-Up', sets: 1, max: true, });
 
         //day 2
         const day2Exercises = [];
         day2Exercises.push({name: 'Pull', isTitle: true});
-        day2Exercises.push({name: 'One Arm Pull-Up', sets: 1, reps: pullup * 0.2, detailsEn: "For each side."});
-        day2Exercises.push({name: 'One Arm Chin-Up', sets: 1, reps: pullup * 0.2, detailsEn: "For each side."});
+        day2Exercises.push({name: 'One Arm Pull-Up', sets: 1, reps: adjustNumbers(pullup * 0.2), detailsEn: "For each side."});
+        day2Exercises.push({name: 'One Arm Chin-Up', sets: 1, reps: adjustNumbers(pullup * 0.2), detailsEn: "For each side."});
         day2Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number."});
-        day2Exercises.push({name: 'Wide Grip Pull-Ups', sets: 4, reps: pullup * 0.4, });
-        day2Exercises.push({name: 'Towel Pull-Ups', sets:12, max: true});
+        day2Exercises.push({name: 'Wide Grip Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.4) });
+        day2Exercises.push({name: 'Towel Pull-Ups', sets: 2, max: true});
 
         //day 3
         const day3Exercises = [];
         day3Exercises.push({name: 'Legs', isTitle: true});
         day3Exercises.push({name: 'Bodyweight Squats', sets: 1, reps: 100, detailsEn: "Warm-up."});
-        day3Exercises.push({name: 'Pistol Squats', sets: 4, reps: squat * 0.6, detailsEn: "For each leg."});
-        day3Exercises.push({name: 'Nordic Curls', sets: 4, reps: squat * 0.6,});
+        day3Exercises.push({name: 'Pistol Squats', sets: 4, reps: adjustNumbers(squat * 0.6), detailsEn: "For each leg."});
+        day3Exercises.push({name: 'Nordic Curls', sets: 4, reps: adjustNumbers(squat * 0.6),});
         day3Exercises.push({name: 'Bulgarian Split Squats', sets: 4, reps: "3 Reps in Reserve", detailsEn: "For each leg."});
         day3Exercises.push({name: 'Bodyweight Squats', sets: 1, max: true, detailsEn: "5 reps slow - 5 reps fast until failure."});
 
@@ -657,14 +657,265 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         const day5Exercises = [];
         day5Exercises.push({name: 'Push', isTitle: true});
         day5Exercises.push({name: 'One Arm Push-Up', sets: 2, max: true});
-        day5Exercises.push({name: "Spiderman Push-Up", sets: 2, reps: pushup * 0.5});
-        day5Exercises.push({name: "Bodyweight Skull Crushers & Bench Dips", sets: 3, reps: pushup * 0.5 + " & 2-3 Reps in Reserve"});
-        day5Exercises.push({name: 'Diamond Push-Up', sets: 3, reps: pushup * 0.5});
+        day5Exercises.push({name: "Spiderman Push-Up", sets: 2, reps: adjustNumbers(pushup * 0.5)});
+        day5Exercises.push({name: "Bodyweight Skull Crushers & Bench Dips", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 2-3 Reps in Reserve"});
+        day5Exercises.push({name: 'Diamond Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
         day5Exercises.push({name: 'Hindu Push-Up', sets: 1, max: true});
         day5Exercises.push({name: 'Handstand Hold', sets: 1, max: true});
 
-        //day 6 
-        
+        //day 6
+        const day6Exercises = [];
+        day6Exercises.push({name: 'Pull', isTitle: true});
+        day6Exercises.push({name: 'Close-Grip Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.6), detailsEn: "Biceps focused."});
+        day6Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Dead hang for 20 seconds before starting the movement."});
+        day6Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "The movement should takae 5 seconds while most of this time (3 seconds) should be spent for the negative part of this movement."});
+        day6Exercises.push({name: "Pull Up & Australian Pull Ups Legs Elevated", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 1-2 Reps in Reserve"});
+        day6Exercises.push({name: 'Side Plank', sets: 3, max: true});
+
+        //day 7
+        const day7Exercises = [];
+        day7Exercises.push({name: 'Cardio', isTitle: true});
+        day7Exercises.push({name: 'V-Ups', sets: 3, reps: "25-35"});
+        day7Exercises.push({name: 'Leg Raises', sets: 3, reps: "25-35"});
+        if (!goals) {
+            day7Exercises.push({name: 'Walk', minutes: "45"});
+        }
+        if (goals) {
+            day7Exercises.push({name: 'Jog', minutes: "10"});
+        }
+
+        //day 8
+        const day8Exercises = [];
+        day8Exercises.push({name: 'Push', isTitle: true});
+        day8Exercises.push({name: 'Handstand Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.3), detailsEn: "Can have support from a wall."});
+        day8Exercises.push({name: 'Archer Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
+        day8Exercises.push({name: 'Negative One Arm Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
+        day8Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
+        day8Exercises.push({name: 'Cross Arm Push-Up', sets: 1, max: true, });
+
+        //day 9
+        const day9Exercises = [];
+        day9Exercises.push({name: 'Pull', isTitle: true});
+        day9Exercises.push({name: 'One Arm Pull-Up', sets: 1, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
+        day9Exercises.push({name: 'One Arm Chin-Up', sets: 1, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
+        day9Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number."});
+        day9Exercises.push({name: 'Wide Grip Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
+        day9Exercises.push({name: 'Towel Pull-Ups', sets: 2, max: true});
+
+        //day 10
+        const day10Exercises = [];
+        day10Exercises.push({name: 'Legs', isTitle: true});
+        day10Exercises.push({name: 'Bodyweight Squats', sets: 1, reps: 100, detailsEn: "Warm-up."});
+        day10Exercises.push({name: 'Pistol Squats', sets: 5, reps: adjustNumbers(squat * 0.6), detailsEn: "For each leg."});
+        day10Exercises.push({name: 'Nordic Curls', sets: 5, reps: adjustNumbers(squat * 0.6),});
+        day10Exercises.push({name: 'Bulgarian Split Squats', sets: 4, reps: "3 Reps in Reserve", detailsEn: "For each leg."});
+        day10Exercises.push({name: 'Bodyweight Squats', sets: 1, max: true, detailsEn: "5 reps slow - 5 reps fast until failure."});
+
+        //day 11
+        const day11Exercises = [];
+        day11Exercises.push({name: 'Core', isTitle: true});
+        day11Exercises.push({name: 'Planche', sets: 2, max: true});
+        day11Exercises.push({name: 'Dragon Flag', sets: 2, max: true, detailsEn: "If you can't perform, try easier variations"});
+        day11Exercises.push({name: 'L-Sits', sets: 2, max: true, detailsEn: "Hold \n If you can't perform, try easier variations"});
+        day11Exercises.push({name: 'Hanging Leg Raises', sets: 3, max: true});
+        day11Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each side."});
+        day11Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each side. \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+
+        //day 12
+        const day12Exercises = [];
+        day12Exercises.push({name: 'Push', isTitle: true});
+        day12Exercises.push({name: 'One Arm Push-Up', sets: 1, max: true, detailsEn: "For each side."});
+        day12Exercises.push({name: "Spiderman Push-Up", sets: 2, reps: adjustNumbers(pushup * 0.5)});
+        day12Exercises.push({name: "Bodyweight Skull Crushers & Bench Dips", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 2-3 Reps in Reserve", detailsEn: "Add a little incline for the bodyweight skull crushers in order to hit the long head."});
+        day12Exercises.push({name: 'Diamond Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
+        day12Exercises.push({name: 'Hindu Push-Up', sets: 1, max: true});
+        day12Exercises.push({name: 'Handstand Hold', sets: 1, max: true});
+
+        //day 13
+        const day13Exercises = [];
+        day13Exercises.push({name: 'Pull', isTitle: true});
+        day13Exercises.push({name: 'Close-Grip Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.7), detailsEn: "Biceps focused."});
+        day13Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.6), detailsEn: "Dead hang for 20 seconds before starting the movement."});
+        day13Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "The movement should takae 5 seconds while most of this time (3 seconds) should be spent for the negative part of this movement."});
+        day13Exercises.push({name: "Pull Up & Australian Pull Ups Legs Elevated", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 1-2 Reps in Reserve"});
+        day13Exercises.push({name: 'Side Plank', sets: 3, max: true});
+
+        //day 14
+        const day14Exercises = [];
+        day14Exercises.push({name: 'Cardio', isTitle: true});
+        day14Exercises.push({name: 'V-Ups', sets: 3, reps: "25-35"});
+        day14Exercises.push({name: 'Leg Raises', sets: 3, reps: "25-35"});
+        if (!goals) {
+            day14Exercises.push({name: 'Walk', minutes: "45"});
+        }
+        if (goals) {
+            day14Exercises.push({name: 'Jog', minutes: "10"});
+        }
+
+        //day 15
+        const day15Exercises = [];
+        day15Exercises.push({name: 'Push', isTitle: true});
+        day15Exercises.push({name: 'Handstand Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.6), detailsEn: "Can have support from a wall."});
+        day15Exercises.push({name: 'Archer Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.6)});
+        day15Exercises.push({name: 'Negative One Arm Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.6)});
+        day15Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.6), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
+        day15Exercises.push({name: 'Cross Arm Push-Up', sets: 1, max: true, });
+
+        //day 16
+        const day16Exercises = [];
+        day16Exercises.push({name: 'Pull', isTitle: true});
+        day16Exercises.push({name: 'One Arm Pull-Up', sets: 2, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
+        day16Exercises.push({name: 'One Arm Chin-Up', sets: 2, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
+        day16Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number."});
+        day16Exercises.push({name: 'Wide Grip Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
+        day16Exercises.push({name: 'Towel Pull-Ups', sets: 2, max: true});
+
+        //day 17
+        const day17Exercises = [];
+        day17Exercises.push({name: 'Legs', isTitle: true});
+        day17Exercises.push({name: 'Bodyweight Squats', sets: 1, reps: 100, detailsEn: "Warm-up."});
+        day17Exercises.push({name: 'Pistol Squats', sets: 6, reps: adjustNumbers(squat * 0.6), detailsEn: "For each leg."});
+        day17Exercises.push({name: 'Nordic Curls', sets: 6, reps: adjustNumbers(squat * 0.6),});
+        day17Exercises.push({name: 'Bulgarian Split Squats', sets: 5, reps: "3 Reps in Reserve", detailsEn: "For each leg."});
+        day17Exercises.push({name: 'Bodyweight Squats', sets: 1, max: true, detailsEn: "5 reps slow - 5 reps fast until failure."});
+
+        //day 18
+        const day18Exercises = [];
+        day18Exercises.push({name: 'Core', isTitle: true});
+        day18Exercises.push({name: 'Planche', sets: 3, max: true});
+        day18Exercises.push({name: 'Dragon Flag', sets: 3, max: true, detailsEn: "If you can't perform, try easier variations"});
+        day18Exercises.push({name: 'L-Sits', sets: 3, max: true, detailsEn: "Hold \n If you can't perform, try easier variations"});
+        day18Exercises.push({name: 'Hanging Leg Raises', sets: 3, max: true});
+        day18Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each side."});
+        day18Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each side. \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+
+        //day 19
+        const day19Exercises = [];
+        day19Exercises.push({name: 'Push', isTitle: true});
+        day19Exercises.push({name: 'One Arm Push-Up', sets: 1, max: true, detailsEn: "For each side."});
+        day19Exercises.push({name: "Spiderman Push-Up", sets: 2, reps: adjustNumbers(pushup * 0.5)});
+        day19Exercises.push({name: "Bodyweight Skull Crushers & Bench Dips", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 2-3 Reps in Reserve", detailsEn: "Add a little incline for the bodyweight skull crushers in order to hit the long head."});
+        day19Exercises.push({name: 'Diamond Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
+        day19Exercises.push({name: 'Hindu Push-Up', sets: 1, max: true});
+        day19Exercises.push({name: 'Handstand Hold', sets: 1, max: true});
+
+        //day 20
+        const day20Exercises = [];
+        day20Exercises.push({name: 'Pull', isTitle: true});
+        day20Exercises.push({name: 'Close-Grip Chin Up', sets: 4, reps: adjustNumbers(pullup * 0.7), detailsEn: "Biceps focused."});
+        day20Exercises.push({name: 'Chin Up', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Dead hang for 20 seconds before starting the movement."});
+        day20Exercises.push({name: 'Chin Up', sets: 4, reps: adjustNumbers(pullup * 0.5), detailsEn: "The movement should takae 5 seconds while most of this time (3 seconds) should be spent for the negative part of this movement."});
+        day20Exercises.push({name: "Pull Up & Australian Pull Ups Legs Elevated", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 1-2 Reps in Reserve"});
+        day20Exercises.push({name: 'Side Plank', sets: 3, max: true});
+
+        //day 21
+        const day21Exercises = [];
+        day21Exercises.push({name: 'Cardio', isTitle: true});
+        day21Exercises.push({name: 'V-Ups', sets: 4, reps: "25-35"});
+        day21Exercises.push({name: 'Leg Raises', sets: 4, reps: "25-35"});
+        if (!goals) {
+            day21Exercises.push({name: 'Walk', minutes: "45"});
+        }
+        if (goals) {
+            day21Exercises.push({name: 'Jog', minutes: "10"});
+        }
+
+        //day 22
+        const day22Exercises = [];
+        day22Exercises.push({name: 'Push', isTitle: true});
+        day22Exercises.push({name: 'Handstand Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.5), detailsEn: "Can have support from a wall."});
+        day22Exercises.push({name: 'Archer Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.7)});
+        day22Exercises.push({name: 'Negative One Arm Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.7)});
+        day22Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.6), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
+        day22Exercises.push({name: 'Cross Arm Push-Up', sets: 1, max: true, });
+
+        //day 23
+        const day23Exercises = [];
+        day23Exercises.push({name: 'Pull', isTitle: true});
+        day23Exercises.push({name: 'One Arm Pull-Up', sets: 2, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
+        day23Exercises.push({name: 'One Arm Chin-Up', sets: 2, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
+        day23Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number."});
+        day23Exercises.push({name: 'Wide Grip Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
+        day23Exercises.push({name: 'Towel Pull-Ups', sets: 2, max: true});
+
+        //day 24
+        const day24Exercises = [];
+        day24Exercises.push({name: 'Legs', isTitle: true});
+        day24Exercises.push({name: 'Bodyweight Squats', sets: 1, reps: 100, detailsEn: "Warm-up."});
+        day24Exercises.push({name: 'Pistol Squats', sets: 6, reps: adjustNumbers(squat * 0.6), detailsEn: "For each leg."});
+        day24Exercises.push({name: 'Nordic Curls', sets: 6, reps: adjustNumbers(squat * 0.6),});
+        day24Exercises.push({name: 'Bulgarian Split Squats', sets: 6, reps: "3 Reps in Reserve", detailsEn: "For each leg."});
+        day24Exercises.push({name: 'Bodyweight Squats', sets: 1, max: true, detailsEn: "5 reps slow - 5 reps fast until failure."});
+
+        //day 25
+        const day25Exercises = [];
+        day25Exercises.push({name: 'Core', isTitle: true});
+        day25Exercises.push({name: 'Planche', sets: 4, max: true});
+        day25Exercises.push({name: 'Dragon Flag', sets: 3, max: true, detailsEn: "If you can't perform, try easier variations"});
+        day25Exercises.push({name: 'L-Sits', sets: 3, max: true, detailsEn: "Hold \n If you can't perform, try easier variations"});
+        day25Exercises.push({name: 'Hanging Leg Raises', sets: 4, max: true});
+        day25Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each side."});
+        day25Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each side. \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+
+        //day 26
+        const day26Exercises = [];
+        day26Exercises.push({name: 'Push', isTitle: true});
+        day26Exercises.push({name: 'One Arm Push-Up', sets: 1, max: true, detailsEn: "For each side."});
+        day26Exercises.push({name: "Spiderman Push-Up", sets: 2, reps: adjustNumbers(pushup * 0.8)});
+        day26Exercises.push({name: "Bodyweight Skull Crushers & Bench Dips", sets: 3, reps: adjustNumbers(pushup * 0.6) + " & 2-3 Reps in Reserve", detailsEn: "Add a little incline for the bodyweight skull crushers in order to hit the long head."});
+        day26Exercises.push({name: 'Diamond Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.7)});
+        day26Exercises.push({name: 'Hindu Push-Up', sets: 1, max: true});
+        day26Exercises.push({name: 'Handstand Hold', sets: 1, max: true});
+
+        //day 27
+        const day27Exercises = [];
+        day27Exercises.push({name: 'Pull', isTitle: true});
+        day27Exercises.push({name: 'Close-Grip Chin Up', sets: 4, reps: adjustNumbers(pullup * 0.8), detailsEn: "Biceps focused."});
+        day27Exercises.push({name: 'Chin Up', sets: 4, reps: adjustNumbers(pullup * 0.7), detailsEn: "Dead hang for 20 seconds before starting the movement."});
+        day27Exercises.push({name: 'Chin Up', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "The movement should takae 5 seconds while most of this time (3 seconds) should be spent for the negative part of this movement."});
+        day27Exercises.push({name: "Pull Up & Australian Pull Ups Legs Elevated", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 1-2 Reps in Reserve"});
+        day27Exercises.push({name: 'Side Plank', sets: 3, max: true});
+
+        //day 28
+        const day28Exercises = [];
+        day28Exercises.push({name: 'Cardio', isTitle: true});
+        day28Exercises.push({name: 'V-Ups', sets: 5, reps: "25-35"});
+        day28Exercises.push({name: 'Leg Raises', sets: 5, reps: "25-35"});
+        if (!goals) {
+            day28Exercises.push({name: 'Walk', minutes: "45"});
+        }
+        if (goals) {
+            day28Exercises.push({name: 'Jog', minutes: "10"});
+        }
+
+        days.push(day1Exercises);
+        days.push(day2Exercises);
+        days.push(day3Exercises);
+        days.push(day4Exercises);
+        days.push(day5Exercises);
+        days.push(day6Exercises);
+        days.push(day7Exercises);
+        days.push(day8Exercises);
+        days.push(day9Exercises);
+        days.push(day10Exercises);
+        days.push(day11Exercises);
+        days.push(day12Exercises);
+        days.push(day13Exercises);
+        days.push(day14Exercises);
+        days.push(day15Exercises);
+        days.push(day16Exercises);
+        days.push(day17Exercises);
+        days.push(day18Exercises);
+        days.push(day19Exercises);
+        days.push(day20Exercises);
+        days.push(day21Exercises);
+        days.push(day22Exercises);
+        days.push(day23Exercises);
+        days.push(day24Exercises);
+        days.push(day25Exercises);
+        days.push(day26Exercises);
+        days.push(day27Exercises);
+        days.push(day28Exercises);
 
     }
 
@@ -674,11 +925,9 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
     if (intensity == 1) {
         createIntermeditateProgram(pushup, pullup, squat, goals);
     }
-    else 
-        createIntermeditateProgram(pushup, pullup, squat, goals);
-    // if (intensity == 2) {
-    //     createAdvancedProgram(pushup, pullup, squat, goals);
-    // }
+    if (intensity == 2) {
+        createAdvancedProgram(pushup, pullup, squat, goals);
+    }
 
     return days;
 
