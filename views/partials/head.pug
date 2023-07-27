@@ -10,7 +10,7 @@ html(lang="en")
       title #{title} | Prodogram Fit
     else 
       title Prodogram Fit
-    link(href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900" rel="preload")
     link(href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet")
     if includes && includes.external
       if includes.external.css
@@ -35,5 +35,6 @@ html(lang="en")
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-HKW3RRQX41');
+      script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1223252578695463' crossorigin='anonymous')
   body
     block head
