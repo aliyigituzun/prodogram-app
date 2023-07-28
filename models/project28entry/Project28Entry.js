@@ -45,7 +45,7 @@ const project28EntrySchema = new mongoose.Schema({
   },
   });
 
-  project28EntrySchema.statics.createEntry = function (data, callback) {
+  project28EntrySchema.statics.createEntry = async function (data, callback) {
 
     const Project28Entry = this;
 
@@ -74,7 +74,7 @@ const project28EntrySchema = new mongoose.Schema({
     }
 
     const newEntry = new Project28Entry(entryData);
-    newEntry.save();
+    await newEntry.save();
     callback(null, newEntry)
   }
 

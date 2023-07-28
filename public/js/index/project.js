@@ -4,6 +4,15 @@ window.addEventListener('load', () => {
 
     document.addEventListener('click', (event) => {
 
+        //upon clicking the element with copy-button class the url will be copied to the clipboard
+        if(event.target.classList.contains('copy-button')) {
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = window.location.href;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+        }
         if(event.target.classList.contains('message-close')) {
             event.target.parentNode.parentNode.remove();
         }

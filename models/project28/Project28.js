@@ -28,7 +28,7 @@ const project28Schema = new mongoose.Schema({
 });
 
 // Create the model
-project28Schema.statics.createProject28 = function (data, callback) {
+project28Schema.statics.createProject28 = async function (data, callback) {
 
   if(!data.name || !data.email || !data.age || !data.weight || !data.height || !data.activity || !data.squat || !data.pullup || !data.pushup || !data.goals)
     return callback({ success: false, error: 'bad_request' });
@@ -53,7 +53,7 @@ project28Schema.statics.createProject28 = function (data, callback) {
     }
 
       const newProject28 = new Project28(project28Data);
-      newProject28.save();
+      await newProject28.save();
       return callback({ error: null, success: true, id: newProject28._id });
 
 };
