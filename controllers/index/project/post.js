@@ -2,8 +2,8 @@ const Project28 = require('../../../models/project28/Project28.js');
 const Project28Entry = require('../../../models/project28entry/Project28Entry');
 
 module.exports = (req, res) => { 
-    Project28Entry.createEntry(req.body, (err, res) => {
-        if (err || !res) {
+    Project28Entry.createEntry(req.body, (err, response) => {
+        if (err || !response) {
             console.log(err);
             return res.status(500).send();
         }
