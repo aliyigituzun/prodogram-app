@@ -3,6 +3,12 @@ window.addEventListener('load', () => {
     const errorMessage = document.getElementById('error');
 
     document.addEventListener('click', (event) => {
+        if(event.target.classList.contains('translation-button')) {
+
+            document.cookie = `lang=${event.target.id}; path=/; max-age=31536000`;
+            window.location.reload();
+        }
+
         if(event.target.classList.contains('each-option-wrapper')) {
             if(document.querySelector('.each-option-wrapper-selected')) {
                 const remove = document.querySelector('.each-option-wrapper-selected');

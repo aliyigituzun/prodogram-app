@@ -3,52 +3,51 @@ block content
     .all-content-wrapper
         .info-wrapper
             .project-title-wrapper#project28 Project 28
-            .each-paragraph-wrapper info
+            .each-paragraph-wrapper= __('project-info')
         .form-wrapper
             .each-input-line-wrapper
                 .each-input-wrapper
-                    .input-title-wrapper= __('Name:')
+                    .input-title-wrapper= __('name')
                     input.input-field(type='text', name='name')#name
                 .each-input-wrapper
-                    .input-title-wrapper= __('Email:')
+                    .input-title-wrapper= __('email')
                     input.input-field(type='text', name='email')#email
             .each-input-line-wrapper 
                 .each-input-wrapper
-                    .input-title-wrapper= __('Weight:')
+                    .input-title-wrapper= __('weight')
                     input.input-field(placeholder='kg', type='number', name='weight' oninput="this.value = this.value.replace(/[^0-9]/g, '')")#weight
                 .each-input-wrapper
-                    .input-title-wrapper= __('Height:')
+                    .input-title-wrapper= __('height')
                     input.input-field(placeholder='cm' type='number', name='height')#height
             .each-input-line-wrapper#centered-wrapper
                 .each-input-wrapper
-                    .input-title-wrapper= __('Age:')
+                    .input-title-wrapper= __('age')
                     input.input-field(type='number', name='age' oninput="this.value = this.value.replace(/[^0-9]/g, '')")#age
             .each-input-line-wrapper#column
-                .one-line-input-title= __('tdee-activity')
                 .input-buttons-wrapper
                     .each-input-button.tdee-activity(data-value=1)#sedentary= __('Hareketsiz')
                     .each-input-button.tdee-activity(data-value=2)#light= __('Hafif Aktif')
                     .each-input-button.tdee-activity(data-value=3)#moderate= __('Orta Aktif')
                     .each-input-button.tdee-activity(data-value=4)#active= __('Aktif')
                     .each-input-button.tdee-activity(data-value=5)#very-active= __('Sporcu')
-            .each-subtitle-wrapper#goals= __('goals')
+            .one-line-input-title= __('goals')
             .each-input-line-wrapper#centered-wrapper
                 .toggle-wrapper
                     .each-option-wrapper#lose-weight(data-value=0)= __('lose')
                     .each-option-wrapper#gain-weight(data-value=1)= __('gain')
-            .each-subtitle-wrapper= __('stats')
+            .each-subtitle-wrapper
             .each-input-line-wrapper#stats
                 .each-input-wrapper
-                    .input-title-wrapper= __('Push Up:')
+                    .input-title-wrapper= __('pushup')
                     input.input-field#pushup(type='number', name='push-up' oninput="this.value = this.value.replace(/[^0-9]/g, '')")
                 .each-input-wrapper
-                    .input-title-wrapper= __('Pull Up:')
+                    .input-title-wrapper= __('pullup')
                     input.input-field#pullup(type='number', name='pull-up' oninput="this.value = this.value.replace(/[^0-9]/g, '')")
                 .each-input-wrapper
-                    .input-title-wrapper= __('Squat:')
+                    .input-title-wrapper= __('squat')
                     input.input-field#squat(type='number', name='squat' oninput="this.value = this.value.replace(/[^0-9]/g, '')")
             .each-input-line-wrapper#centered-wrapper
-                .prepare-button-wrapper#submit-button= __('prepare')
+                .prepare-button-wrapper#submit-button
             .error-message#error
         .footer-wrapper
             .footer-text-wrapper

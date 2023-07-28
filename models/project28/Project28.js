@@ -26,8 +26,6 @@ const project28Schema = new mongoose.Schema({
 // Create the model
 project28Schema.statics.createProject28 = function (data, callback) {
 
-  console.log(data);
-
   if(!data.name || !data.email || !data.age || !data.weight || !data.height || !data.activity || !data.squat || !data.pullup || !data.pushup || !data.goals)
     return callback({ success: false, error: 'bad_request' });
   if(data.pushup < 3) 
@@ -45,13 +43,11 @@ project28Schema.statics.createProject28 = function (data, callback) {
   //   return res.status(500).send();;
   // })
 
-  console.log("Project28.js res!");
       const intensity = setIntensity(data);
       const tdee = calculateTdee(data.weight, data.height, data.age, data.activity);
       const days = setDays(intensity, data.pushup, data.pullup, data.squat, data.goals);
 
       if (tdee == 0) {
-        console.log("tdee is 0");
         return callback({ success: false, error: 'bad_request' });
       }
 

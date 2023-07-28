@@ -20,16 +20,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day 2
         const day2Exercises = [];
         day2Exercises.push({name: 'Pull', isTitle: true});
-        day2Exercises.push({name: 'Negative Pull-Up', sets: 1, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day2Exercises.push({name: 'Negative Chin-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day2Exercises.push({name: 'Towel Lat Pull Down', sets: 2, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day2Exercises.push({name: 'Low Towel Row', sets: 2, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day2Exercises.push({name: 'Reacher Row', sets: 1, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day2Exercises.push({name: 'Negative Pull-Up', sets: 1, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day2Exercises.push({name: 'Negative Chin-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day2Exercises.push({name: 'Towel Lat Pull Down', sets: 2, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day2Exercises.push({name: 'Low Towel Row', sets: 2, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day2Exercises.push({name: 'Reacher Row', sets: 1, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
         
         //day 3
         const day3Exercises = [];
         day3Exercises.push({name: 'Legs', isTitle: true});
-        day3Exercises.push({name: 'Bodyweight Pause Squats', sets: 2, reps: adjustNumbers(squat * 0.5), detailsEn: "Pause for 3 seconds at the bottom of the squat."});
+        day3Exercises.push({name: 'Bodyweight Pause Squats', sets: 2, reps: adjustNumbers(squat * 0.5), detailsEn: "Pause for 3 seconds at the bottom of the squat.", detailsTr: "Squatın en alt noktasında 3 saniye bekleyin."});
         day3Exercises.push({name: 'Lunges', sets: 1, reps: adjustNumbers(squat * 0.5)});
         day3Exercises.push({name: 'Bodyweight Squats', sets: 1, reps: adjustNumbers(squat * 0.5)});
         day3Exercises.push({name: 'Climbers', sets: 1, max: true});
@@ -41,8 +41,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day4Exercises.push({name: 'Mountain Climbers', sets: 1, seconds: "30"});
         day4Exercises.push({name: 'Flutter Kicks', sets: 1, seconds: "30"});
         day4Exercises.push({name: 'Push-Up Plank', sets: 1, max: true});
-        day4Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side"});
-        day4Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+        day4Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her Bir Taraf"});
+        day4Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her Bir Taraf \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, yavaşça öne doğru eğilin."});
 
         //day 5
         const day5Exercises = [];
@@ -57,11 +57,11 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day 6
         const day6Exercises = [];
         day6Exercises.push({name: 'Pull', isTitle: true});
-        day6Exercises.push({name: 'Negative Pull-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day6Exercises.push({name: 'Negative Chin-Up', sets: 1, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day6Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day6Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day6Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day6Exercises.push({name: 'Negative Pull-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day6Exercises.push({name: 'Negative Chin-Up', sets: 1, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day6Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day6Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day6Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
 
         //day 7
         const day7Exercises = [];
@@ -86,16 +86,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day 9
         const day9Exercises = [];
         day9Exercises.push({name: 'Pull', isTitle: true});
-        day9Exercises.push({name: 'Negative Pull-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day9Exercises.push({name: 'Negative Chin-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day9Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day9Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day9Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day9Exercises.push({name: 'Negative Pull-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day9Exercises.push({name: 'Negative Chin-Up', sets: 2, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day9Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day9Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day9Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
 
         //day 10
         const day10Exercises = [];
         day10Exercises.push({name: 'Legs', isTitle: true});
-        day10Exercises.push({name: 'Bodyweight Pause Squats', sets: 3, reps: adjustNumbers(squat * 0.5), detailsEn: "Pause for 3 seconds at the bottom of the squat."});
+        day10Exercises.push({name: 'Bodyweight Pause Squats', sets: 3, reps: adjustNumbers(squat * 0.5), detailsEn: "Pause for 3 seconds at the bottom of the squat.", detailsTr: "Çömelmenin en altında 3 saniye bekleyin."});
         day10Exercises.push({name: 'Lunges', sets: 2, reps: adjustNumbers(squat * 0.5)});
         day10Exercises.push({name: 'Bodyweight Squats', sets: 3, reps: adjustNumbers(squat * 0.5)});
         day10Exercises.push({name: 'Climbers', sets: 1, max: true});
@@ -107,8 +107,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day11Exercises.push({name: 'Mountain Climbers', sets: 2, seconds: "30"});
         day11Exercises.push({name: 'Flutter Kicks', sets: 2, seconds: "30"});
         day11Exercises.push({name: 'Push-Up Plank', sets: 1, max: true});
-        day11Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side"});
-        day11Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+        day11Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her iki taraf"});
+        day11Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Bir kapının yakınında durun. Avuç içleri dışarıya bakacak şekilde, bir veya her iki kolunuzla kapının kenarını kavrayın. Dizleri düz tutarak, yavaşça öne doğru eğilin."});
 
         //day 12
         const day12Exercises = [];
@@ -123,11 +123,11 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day 13
         const day13Exercises = [];
         day13Exercises.push({name: 'Pull', isTitle: true});
-        day13Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day13Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day13Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day13Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day13Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day13Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day13Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day13Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day13Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day13Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
 
         //day 14
         const day14Exercises = [];
@@ -152,16 +152,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         // day 16
         const day16Exercises = [];
         day16Exercises.push({name: 'Pull', isTitle: true});
-        day16Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day16Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day16Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day16Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day16Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day16Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day16Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day16Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day16Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day16Exercises.push({name: 'Reacher Row', sets: 2, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
 
         // day 17
         const day17Exercises = [];
         day17Exercises.push({name: 'Legs', isTitle: true});
-        day17Exercises.push({name: 'Bodyweight Pause Squats', sets: 3, reps: adjustNumbers(squat * 0.7), detailsEn: "Pause for 3 seconds at the bottom of the squat."});
+        day17Exercises.push({name: 'Bodyweight Pause Squats', sets: 3, reps: adjustNumbers(squat * 0.7), detailsEn: "Pause for 3 seconds at the bottom of the squat.", detailsTr: "Squatın en altında 3 saniye bekleyin."});
         day17Exercises.push({name: 'Lunges', sets: 2, reps: adjustNumbers(squat * 0.6)});
         day17Exercises.push({name: 'Bodyweight Squats', sets: 3, reps: adjustNumbers(squat * 0.6)});
         day17Exercises.push({name: 'Climbers', sets: 2, max: true});
@@ -173,8 +173,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day18Exercises.push({name: 'Mountain Climbers', sets: 3, seconds: "30"});
         day18Exercises.push({name: 'Flutter Kicks', sets: 3, seconds: "30"});
         day18Exercises.push({name: 'Push-Up Plank', sets: 3, max: true});
-        day18Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side"});
-        day18Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+        day18Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her Bir Taraf"});
+        day18Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her Bir Taraf \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, yavaşça öne doğru eğilin."});
 
         // day 19
         const day19Exercises = [];
@@ -189,11 +189,11 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         // day 20
         const day20Exercises = [];
         day20Exercises.push({name: 'Pull', isTitle: true});
-        day20Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day20Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day20Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day20Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day20Exercises.push({name: 'Reacher Row', sets: 3, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day20Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day20Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day20Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day20Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day20Exercises.push({name: 'Reacher Row', sets: 3, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
 
 
         // day 21
@@ -209,7 +209,7 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         // day 22
         const day22Exercises = [];
         day22Exercises.push({name: 'Push', isTitle: true});
-        day22Exercises.push({name: 'Knee Push-Up', sets: 4, reps: adjustNumbers(pushup * 1.5)});
+        day22Exercises.push({name: 'Knee Push-Up', sets: 4, reps: adjustNumbers(pushup * 1.5), detailsEn: "Pause for 3 seconds at the bottom of the push-up.", detailsTr: "Push-up'ın en altında 3 saniye bekleyin."});
         day22Exercises.push({name: 'Incline Push-Up', sets: 4, reps: adjustNumbers(pushup * 2)});
         day22Exercises.push({name: 'Bench Dips', sets: 4, reps: adjustNumbers(pushup * 2)});
         day22Exercises.push({name: 'Shoulder Taps', sets: 3, seconds: "10-20"});
@@ -219,16 +219,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         // day 23
         const day23Exercises = [];
         day23Exercises.push({name: 'Pull', isTitle: true});
-        day23Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day23Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day23Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day23Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day23Exercises.push({name: 'Reacher Row', sets: 3, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day23Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day23Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day23Exercises.push({name: 'Towel Lat Pull Down', sets: 3, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day23Exercises.push({name: 'Low Towel Row', sets: 3, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day23Exercises.push({name: 'Reacher Row', sets: 3, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
 
         // day 24
         const day24Exercises = [];
         day24Exercises.push({name: 'Legs', isTitle: true});
-        day24Exercises.push({name: 'Bodyweight Pause Squats', sets: 3, reps: adjustNumbers(squat * 0.9), detailsEn: "Pause for 3 seconds at the bottom of the squat."});
+        day24Exercises.push({name: 'Bodyweight Pause Squats', sets: 3, reps: adjustNumbers(squat * 0.9), detailsEn: "Pause for 3 seconds at the bottom of the squat.", detailsTr: "Squat'ın en altında 3 saniye bekleyin."});
         day24Exercises.push({name: 'Lunges', sets: 3, reps: adjustNumbers(squat * 0.6)});
         day24Exercises.push({name: 'Bodyweight Squats', sets: 3, reps: adjustNumbers(squat * 0.8)});
         day24Exercises.push({name: 'Climbers', sets: 3, max: true});
@@ -240,8 +240,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day25Exercises.push({name: 'Mountain Climbers', sets: 1, seconds: "30"});
         day25Exercises.push({name: 'Flutter Kicks', sets: 1, seconds: "30"});
         day25Exercises.push({name: 'Push-Up Plank', sets: 1, max: true});
-        day25Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side"});
-        day25Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+        day25Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her Bir Taraf"});
+        day25Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her Bir Taraf \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, yavaşça öne doğru eğilin."});
 
         // day 26
         const day26Exercises = [];
@@ -256,11 +256,11 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         // day 27
         const day27Exercises = [];
         day27Exercises.push({name: 'Pull', isTitle: true});
-        day27Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day27Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly."});
-        day27Exercises.push({name: 'Towel Lat Pull Down', sets: 4, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction."});
-        day27Exercises.push({name: 'Low Towel Row', sets: 4, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction."});
-        day27Exercises.push({name: 'Reacher Row', sets: 3, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps"});
+        day27Exercises.push({name: 'Negative Pull-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day27Exercises.push({name: 'Negative Chin-Up', sets: 3, max: true, detailsEn: "Wait at the top, go down slowly.", detailsTr: "Üstte bekleyin, yavaşça inin."});
+        day27Exercises.push({name: 'Towel Lat Pull Down', sets: 4, reps: "10-12", detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day27Exercises.push({name: 'Low Towel Row', sets: 4, reps: 10, detailsEn: "Perform the motion slowly and focus on contraction.", detailsTr: "Hareketi yavaşça yapın ve kasılma üzerine odaklanın."});
+        day27Exercises.push({name: 'Reacher Row', sets: 3, max: true, detailsEn: "Perform the first 5 reps slowly and do your best for the other reps", detailsTr: "İlk 5 tekrarı yavaşça yapın ve diğer tekrarlar için elinizden geleni yapın."});
 
 
         //day 28
@@ -312,8 +312,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day1Exercises.push({ name: 'Decline Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.6) });
         day1Exercises.push({ name: 'Wide Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5) });
         day1Exercises.push({ name: 'Diamond Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5) });
-        day1Exercises.push({ name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative." });
-        day1Exercises.push({ name: 'Bench Dips', sets: 2, max: true, detailsEn: "Legs can be elevated." });
+        day1Exercises.push({ name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative.", detailsTr: "Pozitifte hızlı, negatifte (yaklaşık 3 saniye) yavaş." });
+        day1Exercises.push({ name: 'Bench Dips', sets: 2, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir." });
   
         // Day 2
         const day2Exercises = [];
@@ -321,17 +321,17 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day2Exercises.push({ name: 'Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
         day2Exercises.push({ name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
         day2Exercises.push({ name: 'Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.7) });
-        day2Exercises.push({ name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.7), detailsEn: "Try to feel your biceps." });
+        day2Exercises.push({ name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.7), detailsEn: "Try to feel your biceps.", detailsTr: "Bicepslerinizi hissetmeye çalışın." });
         day2Exercises.push({ name: 'Superman', sets: 2, max: true });
         
         // Day 3
         const day3Exercises = [];
         day3Exercises.push({ name: 'Legs', isTitle: true });
-        day3Exercises.push({ name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast." });
-        day3Exercises.push({ name: 'Bulgarian Split Squats', sets: 4, reps: 20, detailsEn: "10 reps slow - 10 reps fast." });
-        day3Exercises.push({ name: 'Bodyweight Single Leg Deadlift', sets: 3, reps: 20, detailsEn: "5 reps slow - 15 reps fast." });
-        day3Exercises.push({ name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.7), detailsEn: "10 reps slow - 10 reps fast." });
-        day3Exercises.push({ name: 'Jumping Squats', sets: 1, max: true, detailsEn: "10 reps slow - 10 reps fast." });
+        day3Exercises.push({ name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
+        day3Exercises.push({ name: 'Bulgarian Split Squats', sets: 4, reps: 20, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
+        day3Exercises.push({ name: 'Bodyweight Single Leg Deadlift', sets: 3, reps: 20, detailsEn: "5 reps slow - 15 reps fast.", detailsTr: "5 tekrar yavaş - 15 tekrar hızlı." });
+        day3Exercises.push({ name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.7), detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
+        day3Exercises.push({ name: 'Jumping Squats', sets: 1, max: true, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
         
         // Day 4
         const day4Exercises = [];
@@ -340,8 +340,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day4Exercises.push({ name: 'Flutter Kicks', sets: 1, seconds: "30" });
         day4Exercises.push({ name: 'Bar Hanging Leg Raises', sets: 1, max: true });
         day4Exercises.push({ name: 'Push-Up Plank', sets: 1, max: true });
-        day4Exercises.push({ name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side" });
-        day4Exercises.push({ name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently." });
+        day4Exercises.push({ name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her Bir Taraf" });
+        day4Exercises.push({ name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her Bir Taraf \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, yavaşça öne doğru eğilin." });
   
         // Day 5
         const day5Exercises = [];
@@ -349,16 +349,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day5Exercises.push({ name: 'Pike Push-Up', sets: 5, reps: adjustNumbers(pushup * 0.3) });
         day5Exercises.push({ name: 'Hindu Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4) });
         day5Exercises.push({ name: 'Hover Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4) });
-        day5Exercises.push({ name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated." });
+        day5Exercises.push({ name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir." });
         day5Exercises.push({ name: 'Plank Front-Arm Reach', sets: 3, max: true });
         
         // Day 6
         const day6Exercises = [];
         day6Exercises.push({ name: 'Pull', isTitle: true });
-        day6Exercises.push({ name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width." });
+        day6Exercises.push({ name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width.", detailsTr: "Barı çok geniş veya çok yakın tutmayın, omuz genişliğinde tutmaya çalışın." });
         day6Exercises.push({ name: 'Inverted-Rows', sets: 3, reps: adjustNumbers(pullup * 0.8) });
-        day6Exercises.push({ name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly." });
-        day6Exercises.push({ name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly." });
+        day6Exercises.push({ name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte kası sıkıştırın ve yavaşça aşağı inin." });
+        day6Exercises.push({ name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte kası sıkıştırın ve yavaşça aşağı inin." });
         day6Exercises.push({ name: 'W-Extensions', sets: 2, max: true });
         
         // Day 7
@@ -379,8 +379,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day8Exercises.push({ name: 'Decline Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.6) });
         day8Exercises.push({ name: 'Wide Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5) });
         day8Exercises.push({ name: 'Diamond Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.5) });
-        day8Exercises.push({ name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative." });
-        day8Exercises.push({ name: 'Bench Dips', sets: 2, max: true, detailsEn: "Legs can be elevated." });
+        day8Exercises.push({ name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative.", detailsTr: "Pozitifte hızlı ve negatifte (yaklaşık 3 saniye) yavaş." });
+        day8Exercises.push({ name: 'Bench Dips', sets: 2, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir." });
         
         // Day 9
         const day9Exercises = [];
@@ -388,18 +388,18 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day9Exercises.push({ name: 'Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
         day9Exercises.push({ name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
         day9Exercises.push({ name: 'Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5) });
-        day9Exercises.push({ name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Try to feel your biceps." });
+        day9Exercises.push({ name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Try to feel your biceps.", detailsTr: "Bicepslerinizi hissetmeye çalışın." });
         day9Exercises.push({ name: 'Superman', sets: 2, max: true });
         day9Exercises.push({ name: 'Pseudo Planche', sets: 1, max: true });
         
         // Day 10
         const day10Exercises = [];
         day10Exercises.push({ name: 'Legs', isTitle: true });
-        day10Exercises.push({ name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast." });
-        day10Exercises.push({ name: 'Bulgarian Split Squats', sets: 5, reps: 20, detailsEn: "10 reps slow - 10 reps fast." });
-        day10Exercises.push({ name: 'Bodyweight Single Leg Deadlift', sets: 4, reps: 20, detailsEn: "5 reps slow - 15 reps fast." });
-        day10Exercises.push({ name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.7), detailsEn: "10 reps slow - 10 reps fast." });
-        day10Exercises.push({ name: 'Jumping Squats', sets: 1, max: true, detailsEn: "10 reps slow - 10 reps fast." });
+        day10Exercises.push({ name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
+        day10Exercises.push({ name: 'Bulgarian Split Squats', sets: 5, reps: 20, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
+        day10Exercises.push({ name: 'Bodyweight Single Leg Deadlift', sets: 4, reps: 20, detailsEn: "5 reps slow - 15 reps fast.", detailsTr: "5 tekrar yavaş - 15 tekrar hızlı." });
+        day10Exercises.push({ name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.7), detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
+        day10Exercises.push({ name: 'Jumping Squats', sets: 1, max: true, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı." });
         
         // Day 11
         const day11Exercises = [];
@@ -407,14 +407,9 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day11Exercises.push({ name: 'Mountain Climbers', sets: 1, seconds: "30" });
         day11Exercises.push({ name: 'Flutter Kicks', sets: 1, seconds: "30" });
         day11Exercises.push({ name: 'Bar Hanging Leg Raises', sets: 1, max: true });
-        day11Exercises.push({ name: 'Push-Up Plank', sets: 1, max: true });
-        day11Exercises.push({ name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side" });
-        day11Exercises.push({
-            name: 'Chest Doorway Stretch',
-            sets: 2,
-            seconds: "15",
-            detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."
-        });
+        day11Exercises.push({ name: 'Push-Up Plank', sets: 1, max: true});
+        day11Exercises.push({ name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her Bir Taraf" });
+        day11Exercises.push({ name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her Bir Taraf \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, dirsekleri yavaşça öne doğru eğin."});
         
         // Day 12
         const day12Exercises = [];
@@ -422,16 +417,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day12Exercises.push({ name: 'Pike Push-Up', sets: 5, reps: adjustNumbers(pushup * 0.3) });
         day12Exercises.push({ name: 'Hindu Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4) });
         day12Exercises.push({ name: 'Hover Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4) });
-        day12Exercises.push({ name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated." });
+        day12Exercises.push({ name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir." });
         day12Exercises.push({ name: 'Plank Front-Arm Reach', sets: 3, max: true });
         
         // Day 13
         const day13Exercises = [];
         day13Exercises.push({ name: 'Pull', isTitle: true });
-        day13Exercises.push({ name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width." });
+        day13Exercises.push({ name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width.", detailsTr: "Barı çok geniş veya çok yakın tutmayın, omuz genişliğinde tutmaya çalışın." });
         day13Exercises.push({ name: 'Inverted-Rows', sets: 3, reps: adjustNumbers(pullup * 0.8) });
-        day13Exercises.push({ name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly." });
-        day13Exercises.push({ name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly." });
+        day13Exercises.push({ name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte sıkıştırın ve yavaşça aşağı inin." });
+        day13Exercises.push({ name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte sıkıştırın ve yavaşça aşağı inin." });
         day13Exercises.push({ name: 'W-Extensions', sets: 2, max: true });
   
 
@@ -453,8 +448,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day15Exercises.push({ name: 'Decline Push-Up', sets: 5, reps: adjustNumbers(pushup * 0.7) });
         day15Exercises.push({ name: 'Wide Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.6) });
         day15Exercises.push({ name: 'Diamond Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.6) });
-        day15Exercises.push({ name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative." });
-        day15Exercises.push({ name: 'Bench Dips', sets: 2, max: true, detailsEn: "Legs can be elevated." });
+        day15Exercises.push({ name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative.", detailsTr: "Pozitifte hızlı ve negatifte (yaklaşık 3 saniye) yavaş." });
+        day15Exercises.push({ name: 'Bench Dips', sets: 2, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir." });
 
         // Day 16
         const day16Exercises = [];
@@ -462,18 +457,18 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day16Exercises.push({ name: 'Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
         day16Exercises.push({ name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
         day16Exercises.push({ name: 'Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5) });
-        day16Exercises.push({ name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Try to feel your biceps." });
+        day16Exercises.push({ name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Try to feel your biceps.", detailsTr: "Bicepslerinizi hissetmeye çalışın." });
         day16Exercises.push({ name: 'Superman', sets: 2, max: true });
         day16Exercises.push({ name: 'Pseudo Planche', sets: 2, max: true });
 
         //day 17
         const day17Exercises = [];
         day17Exercises.push({name: 'Legs', isTitle: true});
-        day17Exercises.push({name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast."});
-        day17Exercises.push({name: 'Bulgarian Split Squats', sets: 5, reps: 20, detailsEn: "10 reps slow - 10 reps fast."});
-        day17Exercises.push({name: 'Bodyweight Single Leg Deadlift', sets: 4, reps: 20, detailsEn: "5 reps slow - 15 reps fast."});
-        day17Exercises.push({name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.8), detailsEn: "10 reps slow - 10 reps fast."});
-        day17Exercises.push({name: 'Jumping Squats', sets: 2, max: true, detailsEn: "10 reps slow - 10 reps fast."});
+        day17Exercises.push({name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
+        day17Exercises.push({name: 'Bulgarian Split Squats', sets: 5, reps: 20, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
+        day17Exercises.push({name: 'Bodyweight Single Leg Deadlift', sets: 4, reps: 20, detailsEn: "5 reps slow - 15 reps fast.", detailsTr: "5 tekrar yavaş - 15 tekrar hızlı."});
+        day17Exercises.push({name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.8), detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
+        day17Exercises.push({name: 'Jumping Squats', sets: 2, max: true, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
 
         //day 18
         const day18Exercises = [];
@@ -482,8 +477,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day18Exercises.push({name: 'Flutter Kicks', sets: 1, seconds: "30"});
         day18Exercises.push({name: 'Bar Hanging Leg Raises', sets: 1, max: true});
         day18Exercises.push({name: 'Push-Up Plank', sets: 2, max: true});
-        day18Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side"});
-        day18Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+        day18Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her Bir Taraf"});
+        day18Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her Bir Taraf \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, dirsekleri hafifçe öne doğru eğin."});
 
         //day 19
         const day19Exercises = [];
@@ -491,16 +486,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day19Exercises.push({name: 'Pike Push-Up', sets: 5, reps: adjustNumbers(pushup * 0.3)});
         day19Exercises.push({name: 'Hindu Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
         day19Exercises.push({name: 'Hover Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
-        day19Exercises.push({name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated."});
+        day19Exercises.push({name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir."});
         day19Exercises.push({name: 'Plank Front-Arm Reach', sets: 3, max: true});
 
         //day 20
         const day20Exercises = [];
         day20Exercises.push({name: 'Pull', isTitle: true});
-        day20Exercises.push({name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width."});
+        day20Exercises.push({name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width.", detailsTr: "Barı çok geniş veya çok yakın tutmayın, omuz genişliğinde tutmaya çalışın."});
         day20Exercises.push({name: 'Inverted-Rows', sets: 3, reps: adjustNumbers(pullup * 0.8)});
-        day20Exercises.push({name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly."});
-        day20Exercises.push({name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly."});
+        day20Exercises.push({name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte sıkıştırın ve yavaşça aşağı inin."});
+        day20Exercises.push({name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte sıkıştırın ve yavaşça aşağı inin."});
         day20Exercises.push({name: 'W-Extensions', sets: 2, max: true});
 
         //day 21
@@ -521,8 +516,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day22Exercises.push({name: 'Decline Push-Up', sets: 5, reps: adjustNumbers(pushup * 0.8)});
         day22Exercises.push({name: 'Wide Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.7)});
         day22Exercises.push({name: 'Diamond Push-Up', sets: 4, reps: adjustNumbers(pushup * 0.7)});
-        day22Exercises.push({name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
-        day22Exercises.push({name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated."});
+        day22Exercises.push({name: 'Push-Up', sets: 2, max: true, detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative.", detailsTr: "Pozitifte hızlı ve negatifte (yaklaşık 3 saniye) yavaş."});
+        day22Exercises.push({name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir."});
 
         //day 23
         const day23Exercises = [];
@@ -530,18 +525,18 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day23Exercises.push({name: 'Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6)});
         day23Exercises.push({name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6)});
         day23Exercises.push({name: 'Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5)});
-        day23Exercises.push({name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Try to feel your biceps."});
+        day23Exercises.push({name: 'Reverse Grip Australian Pull-Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Try to feel your biceps.", detailsTr: "Bicepslerinizi hissetmeye çalışın."});
         day23Exercises.push({name: 'Superman', sets: 2, max: true});
         day23Exercises.push({name: 'Pseudo Planche', sets: 2, max: true});
 
         //day 24
         const day24Exercises = [];
         day24Exercises.push({name: 'Legs', isTitle: true});
-        day24Exercises.push({name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast."});
-        day24Exercises.push({name: 'Bulgarian Split Squats', sets: 5, reps: 30, detailsEn: "10 reps slow - 10 reps fast."});
-        day24Exercises.push({name: 'Bodyweight Single Leg Deadlift', sets: 4, reps: 30, detailsEn: "5 reps slow - 15 reps fast."});
-        day24Exercises.push({name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.9), detailsEn: "10 reps slow - 10 reps fast."});
-        day24Exercises.push({name: 'Jumping Squats', sets: 2, max: true, detailsEn: "10 reps slow - 10 reps fast."});
+        day24Exercises.push({name: 'Bodyweight Squats', sets: 2, reps: 20, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
+        day24Exercises.push({name: 'Bulgarian Split Squats', sets: 5, reps: 30, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
+        day24Exercises.push({name: 'Bodyweight Single Leg Deadlift', sets: 4, reps: 30, detailsEn: "5 reps slow - 15 reps fast.", detailsTr: "5 tekrar yavaş - 15 tekrar hızlı."});
+        day24Exercises.push({name: 'Bodyweight Squats', sets: 4, reps: adjustNumbers(squat * 0.9), detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
+        day24Exercises.push({name: 'Jumping Squats', sets: 2, max: true, detailsEn: "10 reps slow - 10 reps fast.", detailsTr: "10 tekrar yavaş - 10 tekrar hızlı."});
 
         //day 25
         const day25Exercises = [];
@@ -550,8 +545,8 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day25Exercises.push({name: 'Flutter Kicks', sets: 1, seconds: "30"});
         day25Exercises.push({name: 'Bar Hanging Leg Raises', sets: 1, max: true});
         day25Exercises.push({name: 'Push-Up Plank', sets: 2, max: true});
-        day25Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side"});
-        day25Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+        day25Exercises.push({name: 'Pigeon Stretch', sets: 5, seconds: "15", detailsEn: "Each Side", detailsTr: "Her Bir Taraf"});
+        day25Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each Side \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her Bir Taraf \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, dirsekleri hafifçe öne doğru eğin."});
         
         //day 26
         const day26Exercises = [];
@@ -559,16 +554,16 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         day26Exercises.push({name: 'Pike Push-Up', sets: 5, reps: adjustNumbers(pushup * 0.3)});
         day26Exercises.push({name: 'Hindu Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
         day26Exercises.push({name: 'Hover Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
-        day26Exercises.push({name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated."});
+        day26Exercises.push({name: 'Bench Dips', sets: 3, max: true, detailsEn: "Legs can be elevated.", detailsTr: "Bacaklar yukarıda olabilir."});
         day26Exercises.push({name: 'Plank Front-Arm Reach', sets: 3, max: true});
 
         //day 27
         const day27Exercises = [];
         day27Exercises.push({name: 'Pull', isTitle: true});
-        day27Exercises.push({name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width."});
+        day27Exercises.push({name: 'Chin-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6), detailsEn: "Do not hold the bar too wide or too close, try to hold it around shoulder width.", detailsTr: "Barı çok geniş veya çok yakın tutmayın, omuz genişliğinde tutmaya çalışın."});
         day27Exercises.push({name: 'Inverted-Rows', sets: 3, reps: adjustNumbers(pullup * 0.8)});
-        day27Exercises.push({name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly."});
-        day27Exercises.push({name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly."});
+        day27Exercises.push({name: 'Negative Pull-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte sıkıştırın ve yavaşça aşağı inin."});
+        day27Exercises.push({name: 'Negative Chin-Ups', sets: 2, max: true, detailsEn: "Squeeze at the top and go down slowly.", detailsTr: "En üstte sıkıştırın ve yavaşça aşağı inin."});
         day27Exercises.push({name: 'W-Extensions', sets: 2, max: true});
 
         //day 28
@@ -617,18 +612,18 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day1 
         const day1Exercises = [];
         day1Exercises.push({name: 'Push', isTitle: true});
-        day1Exercises.push({name: 'Handstand Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.3), detailsEn: "Can have support from a wall."});
+        day1Exercises.push({name: 'Handstand Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.3), detailsEn: "Can have support from a wall.", detailsTr: "Duvar desteği olabilir."});
         day1Exercises.push({name: 'Archer Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
         day1Exercises.push({name: 'Negative One Arm Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
-        day1Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
+        day1Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative.", detailsTr: "Pozitifte hızlı ve negatifte (yaklaşık 3 saniye) yavaş."});
         day1Exercises.push({name: 'Cross Arm Push-Up', sets: 1, max: true, });
 
         //day 2
         const day2Exercises = [];
         day2Exercises.push({name: 'Pull', isTitle: true});
-        day2Exercises.push({name: 'One Arm Pull-Up', sets: 1, reps: adjustNumbers(pullup * 0.2), detailsEn: "For each side."});
-        day2Exercises.push({name: 'One Arm Chin-Up', sets: 1, reps: adjustNumbers(pullup * 0.2), detailsEn: "For each side."});
-        day2Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number."});
+        day2Exercises.push({name: 'One Arm Pull-Up', sets: 1, reps: adjustNumbers(pullup * 0.2), detailsEn: "For each side.", detailsTr: "Her bir taraf için."});
+        day2Exercises.push({name: 'One Arm Chin-Up', sets: 1, reps: adjustNumbers(pullup * 0.2), detailsEn: "For each side.", detailsTr: "Her bir taraf için."});
+        day2Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number.", detailsTr: "Aynı tekrar sayısını korurken her hafta sırt çantasının ağırlığını artırın."});
         day2Exercises.push({name: 'Wide Grip Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.4) });
         day2Exercises.push({name: 'Towel Pull-Ups', sets: 2, max: true});
 
@@ -636,10 +631,10 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         const day3Exercises = [];
         day3Exercises.push({name: 'Legs', isTitle: true});
         day3Exercises.push({name: 'Bodyweight Squats', sets: 1, reps: 100, detailsEn: "Warm-up."});
-        day3Exercises.push({name: 'Pistol Squats', sets: 4, reps: adjustNumbers(squat * 0.6), detailsEn: "For each leg."});
+        day3Exercises.push({name: 'Pistol Squats', sets: 4, reps: adjustNumbers(squat * 0.6), detailsEn: "For each leg.", detailsTr: "Her bir bacak için."});
         day3Exercises.push({name: 'Nordic Curls', sets: 4, reps: adjustNumbers(squat * 0.6),});
-        day3Exercises.push({name: 'Bulgarian Split Squats', sets: 4, reps: "3 Reps in Reserve", detailsEn: "For each leg."});
-        day3Exercises.push({name: 'Bodyweight Squats', sets: 1, max: true, detailsEn: "5 reps slow - 5 reps fast until failure."});
+        day3Exercises.push({name: 'Bulgarian Split Squats', sets: 4, reps: "3 Reps in Reserve", detailsEn: "For each leg.", detailsTr: "Her bir bacak için."});
+        day3Exercises.push({name: 'Bodyweight Squats', sets: 1, max: true, detailsEn: "5 reps slow - 5 reps fast until failure.", detailsTr: "Başarısız olana kadar 5 tekrar yavaş - 5 tekrar hızlı."});
 
         //day 4
 
@@ -647,18 +642,18 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         const day4Exercises = [];
         day4Exercises.push({name: 'Core', isTitle: true});
         day4Exercises.push({name: 'Planche', sets: 1, max: true});
-        day4Exercises.push({name: 'Dragon Flag', sets: 1, max: true, detailsEn: "If you can't perform, try easier variations"});
-        day4Exercises.push({name: 'L-Sits', sets: 1, max: true, detailsEn: "Hold \n If you can't perform, try easier variations"});
+        day4Exercises.push({name: 'Dragon Flag', sets: 1, max: true, detailsEn: "If you can't perform, try easier variations", detailsTr: "Yapamıyorsanız, daha kolay varyasyonları deneyin"});
+        day4Exercises.push({name: 'L-Sits', sets: 1, max: true, detailsEn: "Hold \n If you can't perform, try easier variations", detailsTr: "Tutun \n Yapamıyorsanız, daha kolay varyasyonları deneyin"});
         day4Exercises.push({name: 'Hanging Leg Raises', sets: 3, max: true});
-        day4Exercises.push({name: 'Pigeon Stretch', sets: 3, seconds: "15", detailsEn: "Each side."});
-        day4Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each side. \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently."});
+        day4Exercises.push({name: 'Pigeon Stretch', sets: 3, seconds: "15", detailsEn: "Each side.", detailsTr: "Her bir taraf için."});
+        day4Exercises.push({name: 'Chest Doorway Stretch', sets: 2, seconds: "15", detailsEn: "Each side. \n Stand near a doorway. With the palms facing outward, grasp the edge of the doorway with one or both arms. Keeping the elbows straight, lean forward gently.", detailsTr: "Her bir taraf için. \n Bir kapı yakınında durun. Avuç içleri dışarıya bakacak şekilde, kapının kenarını bir veya her iki kolunuzla kavrayın. Dizleri düz tutarak, yavaşça öne doğru eğilin."});
 
         //day 5
         const day5Exercises = [];
         day5Exercises.push({name: 'Push', isTitle: true});
         day5Exercises.push({name: 'One Arm Push-Up', sets: 2, max: true});
         day5Exercises.push({name: "Spiderman Push-Up", sets: 2, reps: adjustNumbers(pushup * 0.5)});
-        day5Exercises.push({name: "Bodyweight Skull Crushers & Bench Dips", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 2-3 Reps in Reserve"});
+        day5Exercises.push({name: "Bodyweight Skull Crushers & Bench Dips", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 2-3 Reps in Reserve", detailsEn: "Superset", detailsTr: "Superset"});
         day5Exercises.push({name: 'Diamond Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
         day5Exercises.push({name: 'Hindu Push-Up', sets: 1, max: true});
         day5Exercises.push({name: 'Handstand Hold', sets: 1, max: true});
@@ -666,9 +661,9 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day 6
         const day6Exercises = [];
         day6Exercises.push({name: 'Pull', isTitle: true});
-        day6Exercises.push({name: 'Close-Grip Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.6), detailsEn: "Biceps focused."});
-        day6Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Dead hang for 20 seconds before starting the movement."});
-        day6Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "The movement should takae 5 seconds while most of this time (3 seconds) should be spent for the negative part of this movement."});
+        day6Exercises.push({name: 'Close-Grip Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.6), detailsEn: "Biceps focused.", detailsTr: "Biceps odaklı."});
+        day6Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "Dead hang for 20 seconds before starting the movement.", detailsTr: "Hareketi başlatmadan önce 20 saniye boyunca asılı kalın."});
+        day6Exercises.push({name: 'Chin Up', sets: 3, reps: adjustNumbers(pullup * 0.5), detailsEn: "The movement should takae 5 seconds while most of this time (3 seconds) should be spent for the negative part of this movement.", detailsTr: "Hareket 5 saniye sürmelidir ve bu sürenin çoğu (3 saniye) bu hareketin negatif kısmı için harcanmalıdır."});
         day6Exercises.push({name: "Pull Up & Australian Pull Ups Legs Elevated", sets: 3, reps: adjustNumbers(pushup * 0.5) + " & 1-2 Reps in Reserve"});
         day6Exercises.push({name: 'Side Plank', sets: 3, max: true});
 
@@ -687,18 +682,18 @@ module.exports = (intensity, pushup, pullup, squat, goals) => {
         //day 8
         const day8Exercises = [];
         day8Exercises.push({name: 'Push', isTitle: true});
-        day8Exercises.push({name: 'Handstand Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.3), detailsEn: "Can have support from a wall."});
+        day8Exercises.push({name: 'Handstand Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.3), detailsEn: "Can have support from a wall.", detailsTr: "Duvar desteği alabilir."});
         day8Exercises.push({name: 'Archer Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5)});
         day8Exercises.push({name: 'Negative One Arm Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.4)});
-        day8Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative."});
+        day8Exercises.push({name: 'Elevated Pike Push-Up', sets: 3, reps: adjustNumbers(pushup * 0.5), detailsEn: "Fast in the positive and slow (about 3 seconds) in the negative.", detailsTr: "Pozitif kısımda hızlı ve negatif kısımda (yaklaşık 3 saniye) yavaş."});
         day8Exercises.push({name: 'Cross Arm Push-Up', sets: 1, max: true, });
 
         //day 9
         const day9Exercises = [];
         day9Exercises.push({name: 'Pull', isTitle: true});
-        day9Exercises.push({name: 'One Arm Pull-Up', sets: 1, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
-        day9Exercises.push({name: 'One Arm Chin-Up', sets: 1, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side."});
-        day9Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number."});
+        day9Exercises.push({name: 'One Arm Pull-Up', sets: 1, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side.", detailsTr: "Her bir taraf için."});
+        day9Exercises.push({name: 'One Arm Chin-Up', sets: 1, reps: adjustNumbers(pullup * 0.3), detailsEn: "For each side.", detailsTr: "Her bir taraf için."});
+        day9Exercises.push({name: 'Backpack Pull-Ups', sets: 6, reps: 6, detailsEn: "Increase the weight of the backpack every week while maintaining the same repetition number.", detailsTr: "Her hafta aynı tekrar sayısını korurken sırt çantasının ağırlığını artırın."});
         day9Exercises.push({name: 'Wide Grip Pull-Ups', sets: 4, reps: adjustNumbers(pullup * 0.6) });
         day9Exercises.push({name: 'Towel Pull-Ups', sets: 2, max: true});
 

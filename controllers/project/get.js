@@ -4,7 +4,6 @@ module.exports = async (req, res) => {
     await Project28.findById(req.params.id)
     .then(project => {
         if(project)
-        console.log(project.days);
         res.render('project/project', {
             title: 'Project 28',
             page: 'index/project',
@@ -15,7 +14,8 @@ module.exports = async (req, res) => {
             }
         },
         url: '/project',
-        project: project
+        project: project,
+        lang: req.cookies['lang']
         });
     });
 };
