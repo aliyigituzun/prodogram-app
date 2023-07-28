@@ -10,7 +10,8 @@
     "mongoose": "^7.4.0",
     "path": "^0.12.7",
     "pug": "^3.0.2",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "validator": "^13.9.0"
   },
   "name": "prodogramfit",
   "version": "1.0.0",

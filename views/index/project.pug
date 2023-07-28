@@ -47,24 +47,29 @@ block content
                     .input-title-wrapper= __('squat')
                     input.input-field#squat(type='number', name='squat' oninput="this.value = this.value.replace(/[^0-9]/g, '')")
             .each-input-line-wrapper#centered-wrapper
-                .prepare-button-wrapper#submit-button
+                .prepare-button-wrapper#submit-button= __('prepare')
             .error-message#error
         .footer-wrapper
+            .footer-text-wrapper
+                a.privacy-policy
             .footer-text-wrapper
                 .footer-text.white PRO
                 .footer-text.green DO
                 .footer-text.white GRAM
+            .footer-text-wrapper
+                .instagram-logo
     .responsive-sidebar-wrapper#sidebar
         a.sidebar-title-text-wrapper(href='/')
             .title-text.white PRO
             .title-text.green DO
             .title-text.white GRAM
         .sidebar
+            a.each-sidebar-item(href='/project')#project28= __('Project28')
             a.each-sidebar-item(href='/program')= __('Paketler')
             a.each-sidebar-item(href='/exercise')= __('Antrenman')
             a.each-sidebar-item(href='/diet')= __('Diyet')
             a.each-sidebar-item(href='/faq')= __('S.S.S.')
             a.each-sidebar-item(href='/calculator')= __('Hesaplama')
-            a.translation-wrapper
-                .translation-button#tr TR 
-                .translation-button#en EN             
+            a.responsive-translation-wrapper
+                .responsive-translation-button#tr TR 
+                .responsive-translation-button#en EN             

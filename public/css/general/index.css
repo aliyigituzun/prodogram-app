@@ -323,6 +323,10 @@
         margin-bottom: 10px;
         height: 60px;
     }
+    .each-link-wrapper:hover {
+        margin-bottom: 10px;
+        height: 60px;
+    }
 }
 @media (max-width: 600px) {
     .each-paragraph-wrapper {

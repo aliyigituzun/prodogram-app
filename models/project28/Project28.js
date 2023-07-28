@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-//const project28Entry = require('./../project28Entry/Project28Entry.js');
 const setIntensity = require('./functions/setIntensity.js');
 const calculateTdee = require('./functions/calculateTdee.js');
 const setDays = require('./functions/setDays.js');
@@ -9,6 +8,11 @@ const project28Schema = new mongoose.Schema({
   name: {
     type: String,
     required: true
+  },
+  email: {
+    type: String,
+    required: true,
+    unique:true
   },
   intensity: {
     type: Number,
@@ -28,20 +32,9 @@ project28Schema.statics.createProject28 = function (data, callback) {
 
   if(!data.name || !data.email || !data.age || !data.weight || !data.height || !data.activity || !data.squat || !data.pullup || !data.pushup || !data.goals)
     return callback({ success: false, error: 'bad_request' });
-  if(data.pushup < 3) 
-    return callback({ success: false, error: 'not_suitable' });
+
   
   const Project28 = this;
-
-  // project28Entry.createEntry(data, (err, res) => {
-  //   if (err || !res) {
-  //     console.log(err);
-  //     return res.status(500).send();
-  //   }
-  //   if (res) {
-  //   }
-  //   return res.status(500).send();;
-  // })
 
       const intensity = setIntensity(data);
       const tdee = calculateTdee(data.weight, data.height, data.age, data.activity);
@@ -51,12 +44,13 @@ project28Schema.statics.createProject28 = function (data, callback) {
         return callback({ success: false, error: 'bad_request' });
       }
 
-      const project28Data = {
-        name: data.name.trim(),
-        intensity: intensity,
-        days: days,
-        tdee: tdee,
-      }
+    const project28Data = {
+      email: data.email.trim(),
+      name: data.name.trim(),
+      intensity: intensity,
+      days: days,
+      tdee: tdee,
+    }
 
       const newProject28 = new Project28(project28Data);
       newProject28.save();

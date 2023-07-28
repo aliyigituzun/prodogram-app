@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const validator = require('validator')
 
 const project28EntrySchema = new mongoose.Schema({
     name: {
@@ -50,6 +51,14 @@ const project28EntrySchema = new mongoose.Schema({
 
     if (!data.name || !data.email || !data.age || !data.weight || !data.height || !data.activity || !data.squat || !data.pullup || !data.pushup || !data.goals)
       return callback({ success: false, error: 'bad_request' });
+    if (data.pushup < 3)
+      return callback({ success: false, error: 'bad_request' });
+    if (isNaN(data.weight) || isNaN(data.height) || isNaN(data.age) || isNaN(data.squat) || isNaN(data.pullup) || isNaN(data.pushup)) {
+      return callback({ success: false, error: 'bad_request' });
+    }
+    if(validator.isEmail(data.email) == false){
+      return callback({ success: false, error: 'invalid_email' });
+    }
 
     const entryData = {
       name: data.name.trim(),

@@ -1,5 +1,4 @@
 module.exports = (req, res) => {
-    console.log(req.socket.remoteAddress);
     res.render('index/index', {
         title: 'Prodogram Fit',
         page: 'index/index',

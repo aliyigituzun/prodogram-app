@@ -2,10 +2,33 @@ extends ../partials/header
 block content
     .all-content-wrapper
         .info-wrapper
+            if lang === 'en'
+                .message-wrapper
+                    .message-close-wrapper
+                        .message-close X
+                    .message-text-wrapper If you cannot perform the exercises in your program, you may do easier alternatives.
+            else 
+                .message-wrapper
+                    .message-close-wrapper
+                        .message-close X
+                    .message-text-wrapper Programınızdaki hareketleri düzgün bir formda yapamıyorsanız eğer, daha kolay alternatiflerini yapabilirsiniz.
+            .info-wrapper
+                .copy-button
+                if project.goals
+                    if lang === 'en'
+                        .tdee-wrapper Your daily calorie intake should be #{(project.tdee + 500)} calories
+                    else 
+                        .tdee-wrapper Günlük kalori alımınız #{project.tdee - 500} kalori olmalı
+                else 
+                    if lang === 'en'
+                        .tdee-wrapper Your daily calorie need is #{project.tdee - 400} calories
+                    else 
+                        .tdee-wrapper Günlük kalori alımınız #{project.tdee - 400} kalori olmalı
             .title-wrapper#project28= __('Project 28')
             if project
                 .applicant-info-wrapper
                     .applicant-info#name Name: #{project.name}
+                    .applicant-info#name Email: #{project.email}
                 - var dayCount = 0
                 for day in project.days
                     - dayCount++
@@ -18,7 +41,8 @@ block content
                                     .each-exercise-name Exercise: #{i.name}
                                     if i.sets 
                                         .each-exercise-sets #{i.sets / 1} #{__('Sets')}
-                                    .x-wrapper X
+                                    if !i.minutes
+                                        .x-wrapper X
                                     if i.reps
                                         .each-exercise-reps #{i.reps} #{__('Reps')}
                                     else if i.seconds 

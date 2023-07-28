@@ -3,10 +3,36 @@ window.addEventListener('load', () => {
     const errorMessage = document.getElementById('error');
 
     document.addEventListener('click', (event) => {
+
+        if(event.target.classList.contains('message-close')) {
+            event.target.parentNode.parentNode.remove();
+        }
+
         if(event.target.classList.contains('translation-button')) {
 
             document.cookie = `lang=${event.target.id}; path=/; max-age=31536000`;
             window.location.reload();
+        }
+
+        const sidebar = document.getElementById('sidebar');
+        let sidebarOpen = false;
+
+        if(event.target.id === 'sidebar-button' && !sidebarOpen) {
+
+            sidebar.classList.add('sidebar-open-animation');
+            sidebar.classList.remove('sidebar-close-animation');
+            window.setTimeout(() => {
+                sidebar.style.transform = 'translateX(0%)';
+                sidebarOpen = true;
+            }, 50);
+        }
+        if(!(event.target.id === 'sidebar') && sidebarOpen) {
+            sidebar.classList.add('sidebar-close-animation');
+            sidebar.classList.remove('sidebar-open-animation');
+            window.setTimeout(() => {
+                sidebar.style.transform = 'translateX(100%)';
+                sidebarOpen = false;
+            }, 50);
         }
 
         if(event.target.classList.contains('each-option-wrapper')) {
@@ -56,6 +82,9 @@ window.addEventListener('load', () => {
                     }
                     if(res.id) {
                         window.location.href = '/project/' + res.id;
+                    }
+                    if(res.error = 'invalid_email') {
+                        return errorMessage.innerHTML = 'Please enter a valid email address';
                     }
                 });
             }
