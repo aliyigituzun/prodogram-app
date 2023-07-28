@@ -9,6 +9,7 @@ module.exports = (req, res) => {
             }
         },
         url: '/program',
+        lang: req.cookies['lang']
     });
     
 };

@@ -3,10 +3,16 @@ block content
     .all-content-wrapper
         .program-wrapper
             .title-wrapper= __('Paketler')
-            img.each-program-wrapper(src="res/program1.jpg")
-            img.each-program-wrapper(src="res/program2.jpg")
-            img.each-program-wrapper(src="res/program3.jpg")
-            img.each-program-wrapper(src="res/program4.jpg")
+            if lang === 'tr'
+                img.each-program-wrapper(src="res/program1.jpg")
+                img.each-program-wrapper(src="res/program2.jpg")
+                img.each-program-wrapper(src="res/program3.jpg")
+                img.each-program-wrapper(src="res/program4.jpg")
+            else
+                img.each-program-wrapper(src="res/program1En.jpg")
+                img.each-program-wrapper(src="res/program2En.jpg")
+                img.each-program-wrapper(src="res/program3En.jpg")
+                img.each-program-wrapper(src="res/program4En.jpg")
         .footer-wrapper
             .footer-text-wrapper
                 .footer-text.white PRO
