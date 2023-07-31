@@ -86,14 +86,14 @@ window.addEventListener('load', () => {
                     return errorMessage.style.color = 'rgb(255, 255, 255)';
                 }
                 serverRequest('/project', 'POST', data, (res) => {
-                    if(res.err) {
+                    if(res.errorMessage === 'invalid_email') {
+                        return errorMessage.innerHTML = 'Please enter a valid email address';
+                    }
+                    else if(res.error) {
                         return errorMessage.innerHTML = 'Something went wrong, please try again later';
                     }
                     if(res.id) {
-                        window.location.href = '/project/' + res.id;
-                    }
-                    if(res.error = 'invalid_email') {
-                        return errorMessage.innerHTML = 'Please enter a valid email address';
+                        return window.location.href = '/project/' + res.id;
                     }
                 });
             }

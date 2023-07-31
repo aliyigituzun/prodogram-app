@@ -31,7 +31,7 @@ const project28Schema = new mongoose.Schema({
 project28Schema.statics.createProject28 = async function (data, callback) {
 
   if(!data.name || !data.email || !data.age || !data.weight || !data.height || !data.activity || !data.squat || !data.pullup || !data.pushup || !data.goals)
-    return callback({ success: false, error: 'bad_request' });
+    return callback({ error: true, errorMessage: 'bad_request' });
 
   
   const Project28 = this;
@@ -41,7 +41,7 @@ project28Schema.statics.createProject28 = async function (data, callback) {
       const days = setDays(intensity, data.pushup, data.pullup, data.squat, data.goals);
 
       if (tdee == 0) {
-        return callback({ success: false, error: 'bad_request' });
+        return callback({ error: true, errorMessage: 'bad_request' });
       }
 
     const project28Data = {
@@ -54,7 +54,7 @@ project28Schema.statics.createProject28 = async function (data, callback) {
 
       const newProject28 = new Project28(project28Data);
       await newProject28.save();
-      return callback({ error: null, success: true, id: newProject28._id });
+      return callback({ error: null, id: newProject28._id });
 
 };
 

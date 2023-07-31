@@ -13,7 +13,10 @@ block content
                         .message-close X
                     .message-text-wrapper Programınızdaki hareketleri düzgün bir formda yapamıyorsanız eğer, daha kolay alternatiflerini yapabilirsiniz.
             .info-wrapper
-                .copy-button Copy Link
+                if lang === 'en'
+                    .copy-button Copy Link
+                if lang === 'tr'
+                    .copy-button Copy Link
                 if project.goals
                     if lang === 'en'
                         .tdee-wrapper Your daily calorie intake should be #{(project.tdee + 500)} calories
@@ -82,6 +85,6 @@ block content
             a.each-sidebar-item(href='/diet')= __('Diyet')
             a.each-sidebar-item(href='/faq')= __('S.S.S.')
             a.each-sidebar-item(href='/calculator')= __('Hesaplama')
-            a.translation-wrapper
-                .translation-button#tr TR 
-                .translation-button#en EN             
+            a.responsive-translation-wrapper
+                .responsive-translation-button#tr TR 
+                .responsive-translation-button#en EN             
