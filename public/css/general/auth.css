@@ -1,0 +1,109 @@
+.background-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(to right, #654ea3 0%, #eaafc8 100%);
+    font-family: sans-serif;
+}
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.auth-input-wrapper {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: gray;
+    padding: 20px 0;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+}
+.auth-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(118, 37, 37);
+}
+.each-auth-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+}
+.short-input {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    height: 30px;
+    width: 45%;
+    padding: 0 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 14px;
+}
+.long-input {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+}
+.register-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 70%;
+    background-color:rgb(56, 218, 107);
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    user-select: none;
+}
+.register-button-wrapper:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 70%;
+    background-color:rgb(31, 124, 60);
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    user-select: none;
+}
+.error-message-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 70%;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+
+}
+

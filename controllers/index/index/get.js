@@ -9,6 +9,7 @@ module.exports = (req, res) => {
             }
         },
         url: '/',
+        user: req.session.user
     });
     
 };

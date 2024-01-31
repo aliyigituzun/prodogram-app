@@ -9,6 +9,7 @@ module.exports = (req, res) => {
             }
         },
         url: '/faq',
+        user: req.session.user
     });
     
 };

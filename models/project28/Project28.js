@@ -58,4 +58,13 @@ project28Schema.statics.createProject28 = async function (data, callback) {
 
 };
 
+project28Schema.statics.getProject28 = async function (callback) {
+    
+  const Project28 = this;
+
+  const projects = await Article.find({});
+  return callback({ error: null, projects: projects });
+
+}
+
 module.exports = mongoose.model('Project28', project28Schema);

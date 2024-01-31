@@ -21,8 +21,6 @@ html(lang="en")
             link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
           else
             link(rel='stylesheet' href=`/css/general/${file_name}.css`)
-      script(src='js/index/navbar.js')
-      script(src='js/index/header.js')
       if includes.external.js
         each file_name in includes.external.js
           if file_name == 'page'
@@ -36,5 +34,8 @@ html(lang="en")
         gtag('js', new Date());
         gtag('config', 'G-HKW3RRQX41');
       script(async='' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1223252578695463' crossorigin='anonymous')
+      script(src='/js/index/navbar.js')
+      script(src='/js/index/header.js')
+      script(src='/js/functions/serverRequest.js')
   body
     block head

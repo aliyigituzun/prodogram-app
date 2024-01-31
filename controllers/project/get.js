@@ -15,7 +15,8 @@ module.exports = async (req, res) => {
         },
         url: '/project',
         project: project,
-        lang: req.cookies['lang']
+        lang: req.cookies['lang'],
+        user: req.session.user
         });
     });
 };

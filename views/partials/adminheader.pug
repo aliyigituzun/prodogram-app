@@ -1,0 +1,28 @@
+extends ./head
+block head
+    .all-wrapper
+        .header
+            .navbar-wrapper
+                a.title-text-wrapper(href='/')
+                    .title-text.white PRO
+                    .title-text.green DO
+                    .title-text.white GRAM
+                .navbar
+                    a.translation-wrapper
+                        select.translation-dropdown
+                            option.translation-button#tr TR
+                            option.translation-button#en EN
+                    .authentication-wrapper
+                        .username-wrapper Admin
+                    .responsive-sidebar-icon#sidebar-button
+                        .responsive-sidebar-icon-bar
+                        .responsive-sidebar-icon-bar
+                        .responsive-sidebar-icon-bar
+        .sidebar-wrapper
+            a.each-sidebar-panel-button(href='/admin/') General
+            a.each-sidebar-panel-button(href='/admin/metrics') Metrics
+            a.each-sidebar-panel-button(href='/admin/exercises') Exercises
+            a.each-sidebar-panel-button(href='/admin/payments') Payments
+            a.each-sidebar-panel-button(href='/admin/codes') Codes & Promotion
+            a.each-sidebar-panel-button(href='/admin/users') Users
+        block content

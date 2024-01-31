@@ -2,6 +2,31 @@ extends ../partials/header
 block content
     .all-content-wrapper
         .program-wrapper
+            .title-wrapper= __('Online Program')
+            .each-online-program
+                .each-online-program-text-wrapper
+                    .each-online-program-title-wrapper
+                        .each-online-program-title= __('Bench Press')
+                    .each-online-program-description-wrapper
+                        .each-online-program-text= __('Bench Press Güç Programı')
+                .each-online-program-button-wrapper
+                    .each-online-program-button= __('Satın Al')
+            .each-online-program
+                .each-online-program-text-wrapper
+                    .each-online-program-title-wrapper
+                        .each-online-program-title= __('Bench Press')
+                    .each-online-program-description-wrapper
+                        .each-online-program-text= __('Bench Press Güç Programı')
+                .each-online-program-button-wrapper
+                    .each-online-program-button= __('Satın Al')
+            .each-online-program
+                .each-online-program-text-wrapper
+                    .each-online-program-title-wrapper
+                        .each-online-program-title= __('Bench Press')
+                    .each-online-program-description-wrapper
+                        .each-online-program-text= __('Bench Press Güç Programı')
+                .each-online-program-button-wrapper
+                    .each-online-program-button= __('Satın Al')
             .title-wrapper= __('Paketler')
             if lang === 'tr'
                 img.each-program-wrapper(src="res/program1.jpg")

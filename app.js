@@ -10,6 +10,7 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 
+const MongoStore = require('connect-mongo');
 
 const numCPUs = process.env.WEB_CONCURRENCY || require('os').cpus().length;
 
@@ -36,6 +37,9 @@ if (cluster.isMaster) {
   const QUERY_LIMIT = 100;
 
   const indexRouteController = require('./routes/indexRoute');
+  const authRouteController = require('./routes/authRoute');
+  const adminRouteController = require('./routes/adminRoute');
+  const dashboardRouteController = require('./routes/dashboardRoute');
 
   app.set('views', path.join(__dirname, 'views'));
   app.set('view engine', 'pug');
@@ -54,7 +58,6 @@ if (cluster.isMaster) {
   });
 
   app.use(express.static(path.join(__dirname, 'public')));
-  app.use(cookieParser());
   app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
   app.use(bodyParser.json({ limit: MAX_SERVER_UPLOAD_LIMIT }));
   app.use(bodyParser.urlencoded({
@@ -67,10 +70,15 @@ if (cluster.isMaster) {
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
+    cookie: { maxAge: 604800000 }, // 7 days
+    store: MongoStore.create({
+        mongoUrl: MONGODB_URI
+    })
   });
 
-  app.use(sessionOptions);
   app.use(i18n.init);
+  app.use(cookieParser());
+  app.use(sessionOptions);
 
   app.use((req, res, next) => {
     if (!req.query || typeof req.query != 'object')
@@ -85,7 +93,9 @@ if (cluster.isMaster) {
   });
 
   app.use('/', indexRouteController);
-  //app.use('/admin', adminRouteController);
+  app.use('/admin', adminRouteController);
+  app.use('/auth', authRouteController);
+  app.use('/dashboard', dashboardRouteController)
 
 
 

@@ -1,0 +1,48 @@
+extends ../partials/adminheader
+block content
+    .all-content-wrapper
+        .user-edit-panel(style='display: none;')
+            .user-info-edit-wrapper
+                .user-edit-title-wrapper Edit User Information
+                .user-edit-input-label User Full Name
+                .user-fullname-wrapper
+                    input.short-input#name
+                    input.short-input#surname
+                .user-edit-input-label User Email Address
+                .user-email-wrapper
+                    input.long-input#email
+                .user-edit-input-label User Telephone Number
+                .user-telephone-wrapper
+                    input.long-input#telephone
+            .user-administrative-edit-wrapper
+                .user-edit-title-wrapper Edit User Administrative Information
+                .user-edit-input-label User Role
+                .user-role-wrapper
+                    select#role
+                        option(value='admin') Admin
+                        option(value='user') User
+                        option(value='coach') Coach
+            .user-edit-button-wrapper 
+                button#close-button(data-id = user._id) Close Edit Panel
+                button#save-user-button(data-id = user._id) Save Changes
+                button#delete-user-button(data-id = user._id) Delete User
+        .dashboard-content-wrapper
+            .users-title-wrapper Users
+            .user-search-wrapper
+                .user-search-bar
+            for user in users
+                .each-user-wrapper 
+                    .user-full-name Full Name: #{user.name} #{user.surname}
+                    .user-email Mail Address: #{user.email}
+                    .user-telephone-number Telephone Number: #{user.telephone}
+                    .user-role Account Type: #{user.role}
+                    .user-actions
+                        .user-actions-button#edit(data-id = user._id) Edit
+    .responsive-sidebar-wrapper#sidebar
+        a.sidebar-title-text-wrapper(href='/')
+            .title-text Title
+        .sidebar
+            a.each-sidebar-item(href='/page')= __('Page')
+            a.translation-wrapper
+                .translation-button#tr TR
+                .translation-button#en En

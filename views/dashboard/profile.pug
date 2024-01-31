@@ -1,0 +1,21 @@
+extends ../partials/header
+block content
+    .all-content-wrapper
+        .sidebar-wrapper
+            a.each-sidebar-panel-button(href='/admin/') Your Programs
+            a.each-sidebar-panel-button(href='/admin/metrics') Physical Info
+            a.each-sidebar-panel-button(href='/admin/exercises') Membership
+            a.each-sidebar-panel-button(href='/admin/payments') Training
+            a.each-sidebar-panel-button(href='/admin/codes') Promotion
+            a.each-sidebar-panel-button(href='/admin/users') Progress
+            a.each-sidebar-panel-button(href='/admin/users') Payments
+            a.each-sidebar-panel-button(href='/admin/users') Reach Us
+        .dashboard-content-wrapper
+    .responsive-sidebar-wrapper#sidebar
+        a.sidebar-title-text-wrapper(href='/')
+            .title-text Title
+        .sidebar
+            a.each-sidebar-item(href='/page')= __('Page')
+            a.translation-wrapper
+                .translation-button#tr Tr
+                .translation-button#en En

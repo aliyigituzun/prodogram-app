@@ -1,0 +1,192 @@
+.users-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+
+}
+.each-user-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background: rgb(45,221,171);
+    background: linear-gradient(165deg, rgba(45,221,171,1) 0%, rgba(131,89,192,1) 50%); 
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.user-full-name {
+    width: 20%;
+    text-align: center;
+}
+.user-email {
+    width: 20%;
+    text-align: center;
+}
+.user-telephone {
+    width: 20%;
+    text-align: center;
+}
+.user-role {
+    width: 20%;
+    text-align: center;
+}
+.user-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.user-actions-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 40%;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    background-color: rgb(56, 218, 107);
+    font-weight: 900;
+    cursor: pointer;
+}
+.user-actions-button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 40%;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    background-color: rgb(28, 142, 64);
+    font-weight: 900;
+    cursor: pointer;
+}
+.user-edit-panel {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 2px solid #000000;
+    background-color: rgb(109, 109, 109);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.user-info-edit-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #000000;
+    position: absolute;
+    left: 0px;
+}
+.user-administrative-edit-wrapper {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+}
+.user-edit-button-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0px;
+    background-color: blue;
+}
+.user-edit-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.user-edit-input-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    height: 10%;
+}
+.user-fullname-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 12%;
+}
+.user-email-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 12%;
+}
+.user-telephone-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 12%;
+}
+.user-role-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 5%;
+}
+.short-input {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    height: 30px;
+    width: 45%;
+    padding: 0 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 14px;
+}
+.long-input {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+}

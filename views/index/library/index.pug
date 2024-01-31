@@ -1,16 +1,16 @@
-extends ../partials/header
+extends ../../partials/header
 block content
     .all-content-wrapper
         .info-wrapper
-            .title-wrapper= __('Antrenman')
-            .each-subtitle-wrapper Powerlifting
-            .each-paragraph-wrapper= __('Powerlifting')
-            .each-subtitle-wrapper Calisthenics
-            .each-paragraph-wrapper= __('Calisthenics')
-            .each-subtitle-wrapper= __('Kardiyo')
-            .each-paragraph-wrapper= __('cardio')
-            .each-subtitle-wrapper Plyometrics
-            .each-paragraph-wrapper= __('Plyometrics') 
+            .title-wrapper= __('Kütüphane')
+            .each-paragraph-wrapper= __('Prodogram kütüphane, fitness yolculuğunuzda diyet ve antrenman konusunda size rehberlik olması amacıyla derlenmişitr')
+            .sections-wrapper
+                .each-section-wrapper
+                    .each-section-name= __('Diyet')
+                    .each-section-description
+                .each-section-wrapper 
+                    .each-section-name= __('Antrenman')
+                    .each-section-description
         .footer-wrapper
             .footer-text-wrapper
                 .footer-text.white PRO

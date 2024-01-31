@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 const indexGetController = require('../controllers/index/index/get');
-const dietGetController = require('../controllers/index/diet/get');
-const exerciseGetController = require('../controllers/index/exercise/get');
+// const libraryIndexGetController = require ('../controllers/index/library/index/get');
+// const dietGetController = require('../controllers/index/library/diet/get');
+// const exerciseGetController = require('../controllers/index/library/exercise/get');
 const faqGetController = require('../controllers/index/faq/get');
 const calculatorGetController = require('../controllers/index/calculator/get');
 const programGetController = require('../controllers/index/program/get');
@@ -17,12 +18,15 @@ const projectPostController = require('../controllers/index/project/post');
 router.get('/', 
     indexGetController
     );
-router.get('/diet', 
-    dietGetController
-    );
-router.get('/exercise', 
-    exerciseGetController
-    );
+// router.get('/library',
+//     libraryIndexGetController
+//     );
+// router.get('/library/diet', 
+//     dietGetController
+//     );
+// router.get('/library/exercise', 
+//     exerciseGetController
+//     );
 router.get('/faq', 
     faqGetController
     );
