@@ -49,7 +49,7 @@ const userSchema = new Schema({
         minlength: [8, 'Password must be at least 8 characters long'],
         maxlength: [50, 'Password must be at most 50 characters long']
     },
-    profileImage: {
+    profile_image: {
         type: String,
         default: '/img/user.png'
     },
@@ -57,22 +57,29 @@ const userSchema = new Schema({
         type: String,
         default: 'user'
     },
-    isVerified: {
+    is_verified: {
         type: Boolean,
         default: false
     },
-    createdAt: {
+    created_at: {
         type: Date,
         default: Date.now
     },
-    updatedAt: {
+    updated_at: {
         type: Date
     },
-    isActive: {
+    is_active: {
         type: Boolean,
         default: true
     },
-
+    is_completed: {
+        type: Boolean,
+        default: false
+    },
+    is_deletec: {
+        type: Boolean,
+        default: false
+    }
 });
 
 userSchema.statics.createUser = async function (data, callback) {
@@ -90,6 +97,7 @@ userSchema.statics.createUser = async function (data, callback) {
     if(!validator.isEmail(data.email)) {
         return callback(false, null);
     }
+    
     identifier = uuidv4();
     
     const user = new this({
@@ -98,7 +106,7 @@ userSchema.statics.createUser = async function (data, callback) {
         identifier,
         email: data.email,
         password: data.password,
-        createtAt: Date.now(),
+        created_at: Date.now(),
     });
 
     const newUser = new User(user);
@@ -107,11 +115,15 @@ userSchema.statics.createUser = async function (data, callback) {
     return callback(null, newUser);
 }
 
-userSchema.statics.verifyUserEmail = function (identifier) {
+userSchema.statics.verifyUserEmail = function (id, email) {
     //sets isActive to true
     }
 
-userSchema.statics.validateUser = function (telephone) {
+userSchema.statics.completeUser = function (id, data) {
+    //after completing physical info
+    }
+
+userSchema.statics.validateUser = function (id, telephone) {
     //mobile number verification required for coaching etc.
 }
 

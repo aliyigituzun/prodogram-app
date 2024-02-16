@@ -1,0 +1,130 @@
+extends ../partials/adminheader
+block content
+    .all-content-wrapper
+        .dashboard-content-wrapper
+            .exercises-left-wrapper
+                .exercises-title-wrapper Exercises
+                .exercise-create-button-wrapper
+                    .exercise-create-button#create-exercise Create Exercise
+                .exercise-search-wrapper
+                    input.user-search-bar
+                for exercise in exercises
+                    .each-user-wrapper
+                        .exercise-name Name: #{exercise.name}
+                        .user-actions
+                            .user-actions-button#edit(data-id = exercise._id) Edit
+            .exercises-right-wrapper
+                .exercise-create-panel-wrapper
+                    .exercise-create-title Create Exercise
+                    .exercise-create-label General Information
+                    input.exercise-name.exercise-input(type="text", placeholder="Name")
+                    textarea.exercise-description.exercise-input(type="text", placeholder="Description")
+                    select.exercise-input(name='difficulty')
+                        option(value='beginner') Beginner
+                        option(value='intermediate') Intermediate
+                        option(value='advanced') Advanced
+                    .exercise-create-label Muscle Information
+                    .exercise-create-input-label Primary Muscle
+                    select.exercise-input(name='primaryMuscle')
+                        option(value='abductors') Abductors
+                        option(value='abs') Abs
+                        option(value='adductors') Adductors
+                        option(value='biceps') Biceps
+                        option(value='calves') Calves
+                        option(value='chest') Chest
+                        option(value='forearms') Forearms
+                        option(value='glutes') Glutes
+                        option(value='hamstrings') Hamstrings
+                        option(value='hip flexors') Hip Flexors
+                        option(value='it band') IT Band
+                        option(value='lats') Lats
+                        option(value='lower back') Lower Back
+                        option(value='upper back') Upper Back
+                        option(value='neck') Neck
+                        option(value='obliques') Obliques
+                        option(value='palmar fascia') Palmar Fascia
+                        option(value='plantar fascia') Plantar Fascia
+                        option(value='quads') Quads
+                        option(value='shoulders') Shoulders
+                        option(value='traps') Traps
+                        option(value='triceps') Triceps
+                        option(value='cardio') Cardio
+                    .exercise-create-input-label Secondary Muscles
+                    .exercise-input
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='abductors')
+                            .each-muscle-name Abductors
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='abs')
+                            .each-muscle-name Abs
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='adductors')
+                            .each-muscle-name Adductors
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='biceps')
+                            .each-muscle-name Biceps
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='calves')
+                            .each-muscle-name Calves
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='chest')
+                            .each-muscle-name Chest
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='forearms')
+                            .each-muscle-name Forearms
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='glutes')
+                            .each-muscle-name Glutes
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='hamstrings')
+                            .each-muscle-name Hamstrings
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='hip flexors')
+                            .each-muscle-name Hip Flexors
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='it band')
+                            .each-muscle-name IT Band
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='lats')
+                            .each-muscle-name Lats
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='lower back')
+                            .each-muscle-name Lower Back
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='upper back')
+                            .each-muscle-name Upper Back
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='neck')
+                            .each-muscle-name Neck
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='obliques')
+                            .each-muscle-name Obliques
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='palmar fascia')
+                            .each-muscle-name Palmar Fascia
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='plantar fascia')
+                            .each-muscle-name Plantar Fascia
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='quads')
+                            .each-muscle-name Quads
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='shoulders')
+                            .each-muscle-name Shoulders
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='traps')
+                            .each-muscle-name Traps
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='triceps')
+                            .each-muscle-name Triceps
+                        .each-muscle-option-wrapper
+                            input(type='checkbox', name='secondaryMuscles', value='cardio')   
+                            .each-muscle-name Cardio 
+    .responsive-sidebar-wrapper#sidebar
+        a.sidebar-title-text-wrapper(href='/')
+            .title-text Title
+        .sidebar
+            a.each-sidebar-item(href='/page')= __('Page')
+            a.translation-wrapper
+                .translation-button#tr TR
+                .translation-button#en En

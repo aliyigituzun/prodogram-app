@@ -5,8 +5,17 @@ window.addEventListener('load', () => {
     document.addEventListener('click', (e) => {
         
         if(e.target.id === 'edit' || e.target.parentElement.id === 'edit') {
+
+            
             
             let id = e.target.id === 'edit' ? e.target.dataset.id : e.target.parentElement.dataset.id;
+            let closeButton = editPanel.querySelector('#close-button');
+            closeButton.dataset.id = id;
+            let saveButton = editPanel.querySelector('#save-user-button');
+            saveButton.dataset.id = id;
+            let deleteButton = editPanel.querySelector('#delete-user-button');
+            deleteButton.dataset.id = id;
+            
             serverRequest('/admin/users/' + id, 'GET', {id}, (res) => {
                 console.log("geldi")
                 console.log(res)

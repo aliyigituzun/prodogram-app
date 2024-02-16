@@ -1,0 +1,126 @@
+.dashboard-content-wrapper {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    min-height: 100vh;
+    width: calc(100% - 260px);
+    background-color: #ffffff;
+    position: fixed;
+    top: 90px;
+    right: 0px;
+}
+.exercises-title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.exercises-left-wrapper {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(163, 126, 80);
+    border-right: 1px solid #000000;
+}
+.exercises-right-wrapper {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    width: 40%;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding-left: 30px;
+}
+.exercise-create-panel-wrapper {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin-top: 10px;
+}
+.exercise-create-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.exercise-create-label {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+}
+.exercise-create-input-label {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+}
+.exercise-input {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex; 
+    flex-direction: column;
+    width: 90%;
+    min-height: 30px;
+    height: auto;
+    margin-left: 40px;
+    padding-left: 40px;
+}
+.each-muscle-option-wrapper {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
